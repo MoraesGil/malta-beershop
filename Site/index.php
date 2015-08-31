@@ -31,11 +31,11 @@
 </head>
 
 <body
-<?php 
-if (isset($_GET['pg'])){ 
-$pagina = $_GET['pg']; 
+<?php
+if (isset($_GET['pg'])){
+$pagina = $_GET['pg'];
 if($pagina == "home") { echo 'class="home"'; }
-else if ($pagina == "404") { echo 'class="page-404"'; } 
+else if ($pagina == "404") { echo 'class="page-404"'; }
 else if ($pagina == "contato") { echo 'class="blog"'; }
 else if ($pagina == "empresa") { echo 'class="blog_classic"'; }
 else if ($pagina == "noticias") { echo 'class="blog_classic"'; }
@@ -54,7 +54,7 @@ else { echo 'class="home"';}
 
  ?>
 >
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="display:block !important">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="row">
 			<div class="col col-sm-12">
@@ -72,31 +72,31 @@ else { echo 'class="home"';}
 					<div class="left-cell">
 						<ul class="nav navbar-nav" style="width: 800px !important;">
 							<li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "home") { echo 'class="active"'; } } ?>>
-								<a href="home">Home</a>	
+								<a href="home">Home</a>
 							</li>
 							<li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "empresa") { echo 'class="active"'; } } ?>>
-								<a href="empresa">EMPRESA</a>		
+								<a href="empresa">EMPRESA</a>
 							</li>
                             <li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "marcas") { echo 'class="active"'; } } ?>>
-								<a href="marcas">MARCAS</a>					
-							</li>						
+								<a href="marcas">MARCAS</a>
+							</li>
 							<li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "noticias") { echo 'class="active"'; } } ?>>
 								<a href="noticias">NOTÍCIAS</a>
 							</li>
 							<li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "fale") { echo 'class="active"'; } } ?>>
-								<a href="https://seguro.catho.com.br/inclusao//curriculo.php?e=malta" target="_blank">TRABALHE CONOSCO</a>					
+								<a href="https://seguro.catho.com.br/inclusao//curriculo.php?e=malta" target="_blank">TRABALHE CONOSCO</a>
 							</li>
 							<li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "contato") { echo 'class="active"'; } } ?>>
 								<a href="contato">CONTATO</a>
-							</li>	
+							</li>
 						</ul>
 					</div>
 					<div class="right-cell">
 						<form class="navbar-form navbar-right">
 							<ul>
 								<li>
-									
-																
+
+
 								</li>
 							</ul>
 						</form>
@@ -107,7 +107,7 @@ else { echo 'class="home"';}
 	</div>
 </nav><!-- Main Navigation -->
 <!-- INTERNAS -->
-<?php 
+<?php
 if (isset($_GET['pg'])){
 		$pagina = $_GET['pg'];
 		if(file_exists("pg/$pagina.php")) {
@@ -115,7 +115,7 @@ if (isset($_GET['pg'])){
 		}
 		else{
 			include_once("pg/404.php");
-		}	
+		}
 }else {
 			include_once("pg/home.php");
 		}
@@ -140,30 +140,30 @@ $(window).load(function() {
         visibleItems: 5,
         animationSpeed: 1000,
         autoPlay: true,
-        autoPlaySpeed: 3000,            
+        autoPlaySpeed: 3000,
         pauseOnHover: true,
         enableResponsiveBreakpoints: true,
-        responsiveBreakpoints: { 
-            portrait: { 
+        responsiveBreakpoints: {
+            portrait: {
                 changePoint:480,
                 visibleItems: 1
-            }, 
-            landscape: { 
+            },
+            landscape: {
                 changePoint:640,
                 visibleItems: 2
             },
-            tablet: { 
+            tablet: {
                 changePoint:768,
                 visibleItems: 3
             }
         }
-    });  
+    });
 });
 </script>
 <script type="text/javascript" src="_/js/jquery.flexisel.js"></script>
 <script type="text/javascript" src="_/js/myscript.js"></script>
-<script type="text/javascript" src="_/js/modal_effects.js"></script>  
+<script type="text/javascript" src="_/js/modal_effects.js"></script>
 
-     
+
 </body>
-</html>				
+</html>
