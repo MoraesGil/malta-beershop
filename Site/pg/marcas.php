@@ -27,43 +27,6 @@ h2{
 }
 </style>
 
-<section class="sub-slider bg-pilsen" data-type="background" data-speed="3" style="margin-bottom: 0px !important">
-	<div class="container">
-		<div class="row">
-			<div class="col col-sm-12">
-				<div id="sequence-sub-slider">
-
-					<ul class="sequence-canvas">
-						<li class="animate-in">
-							<div class="row">
-								<div class="col col-sm-5 col-sm-offset-1 col-xs-12 slide-image-container">
-									<img class="img-responsive absolute-pos slide-image" src="_/images/marcas/item-pilsen.png">
-								</div>
-								<div class="col col-sm-5 col-xs-12">
-									<div class="slide-panel absolute-pos">
-										<section style="margin-top: 90px">
-											<h2>CERVEJA MALTA PILSEN</h2>
-										</section>
-
-										<hr>
-										<p class="slide-description-text">
-											Embalagens:<br>
-											Garrafa retornável 600 ml<br>
-											Lata 473 ml<br>
-											Lata 350 ml<br>
-											Lata 269 ml<br>
-										</p>
-										<div class="slide-readmore">
-											<a href="malta-pilsen" class="button-more">Veja Mais</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li><!-- Frame 1 -->
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div style="background-image:url('_/images/marcas/bgs/bg-footer-malta-pilsen.jpg'); height:50px; width:100%;">    </div>
+<section style="magin: 0 0 0 0" >
+	<img class="img-responsive" src="_/images/marcas.jpg" alt="" />
 </section><!-- Sub Slider -->
