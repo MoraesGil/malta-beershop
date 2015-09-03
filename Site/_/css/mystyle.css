@@ -132,7 +132,7 @@ button {
   max-width: 100%;
 }
 section {
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
 }
 .sectionContainer {
   background-color: #ecf0f1;
