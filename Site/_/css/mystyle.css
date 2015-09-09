@@ -1235,54 +1235,7 @@ a.search_btn :hover {
   position: absolute;
   height: auto;
 }
-/* Sub Slider */
 
-\
-/*
-.sub-slider {
-background-image: url(../images/sub-slider/bg-parallax-sub-slider.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-width: 100%;
-display: block;
-}
-*/
-
-
-
-.sub-slider {
-  background-image: url(../images/sub-slider/bg-parallax-sub-slider.jpg);
-  width: 100%;
-  display: block;
-}
-
-.bg-malzibier {
-  background-image: url(../images/marcas/bgs/bg-malta-malzibier.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  display: block;
-}
-
-.bg-pilsen {
-  background-image: url(../images/marcas/bgs/bg-malta-pilsen.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  display: block;
-}
-
-.bg-pilsen-sem-alcool {
-  background-image: url(../images/marcas/bgs/bg-malta-pilsen-sem-alcool.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  display: block;
-}
 
 .sub-slider {
   width: 100%;
@@ -4825,14 +4778,7 @@ label.error {
   margin-bottom: 5px;
   color: #ffffff;
 }
-/* Footer */
-footer {
-  background-image:url(../images/bg-footer.jpg);
-  overflow: hidden;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
-}
 @media (max-width: 1200px) {
   footer {
     /*padding-top: 0px;*/
