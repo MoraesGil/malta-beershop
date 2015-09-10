@@ -130,6 +130,7 @@ button {
 /* General */
 .container {
   max-width: 100%;
+  padding-top: 20px;
 }
 section {
   /*margin-bottom: 80px;*/
@@ -232,9 +233,9 @@ padding: 10px 20px;
     background: #ffffff;
   }
 }
-body.home .navbar-default {
+/*body.home .navbar-default {
   display: none;
-}
+}*/
 .md-close i {
   line-height: 1.5em;
 }

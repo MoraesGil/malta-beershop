@@ -87,7 +87,7 @@ else { echo 'class="home"';}
 								<a href="https://seguro.catho.com.br/inclusao//curriculo.php?e=malta" target="_blank">TRABALHE CONOSCO</a>
 							</li>
 							<li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "contato") { echo 'class="active"'; } } ?>>
-								<a href="contato">CONTATO</a>
+								<a href="contato">FALE CONOSCO</a>
 							</li>
 						</ul>
 					</div>

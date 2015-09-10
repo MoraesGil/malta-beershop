@@ -5,20 +5,7 @@
 		<ul class="sequence-canvas">
 			<li class="slide-frame">
 				<div class="slide-bg slide-bg1"></div>
-				<div class="slide-logo">
-
-				</div>
-				<div class="slide-title">
-					<p></p>
-				</div>
-				<div class="slide-text">
-					<p></p>
-				</div>
-				<div class="slide-button">
-					<a href="#" class="btn-cta">Take a Tour</a>
-				</div>
-			</li><!-- Frame 1 -->
-
+			</li>
 		</ul>
 	</div>
 </div>

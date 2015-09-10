@@ -45,15 +45,11 @@ h2{
 	color: white;
 	font-family: helvetica;
 	font-size: 2em;
-	line-height: 36.3px;
 	margin-bottom: 40px;
 	margin-top: 40px;
 	text-align: left;
 	text-transform: uppercase;
 	border-bottom:1px solid white;
-}
-p{
-	color: white;
 }
 
 .marca{
@@ -63,25 +59,63 @@ p{
 	width: 100%;
 	display: block;
 	padding-top: 20px;
-	min-height: 400px;
+	height: auto;
 }
 
 .mesa{
 	height:40px;
 	background-repeat: repeat-x;
 }
+
+.beer{
+	width: auto;
+	height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 </style>
 
-<!-- Produto 1 -->
-<div class="marca " style="background-image: url(_/images/marcas/1/background.jpg">
+<?php
+$beers = array(
+"MALTA PILSEN",
+"MALTA PILSEN SEM ÁLCOOL",
+"MALTA MALZBIER",
+"MALTA MALZBIER SEM ÁLCOOL",
+"GOLDEN BEER",
+"MALTA CHOPP",
+"CRISTALINA",
+"TRIPICOLA",
+"CLUB SODA",
+"NATPOWER ENERGY DRINK"
+);
+
+$link= array(
+	"pilsen",
+	"pilsen-sem-alcool",
+	"malzibier",
+	"malzibier-sem-alcool",
+	"golden-beer",
+	"malta-chopp",
+	"cristalina",
+	"tripicola",
+	"club-soda",
+	"natpower"
+);
+
+
+for ($i=1; $i <= 10; $i++) {
+
+?>
+<div class="marca " style="background-image: url(_/images/marcas/<?php echo $i ?>/background.jpg">
 	<div class="row">
-		<!-- Coluna img -->
 		<div class="
 		col-xs-12
 		col-sm-4 col-sm-offset-3
 		col-md-3 col-md-offset-3
 		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/1/beer.png" alt="" />
+		<img class="beer" src="_/images/marcas/<?php echo $i ?>/beer.png" alt="" />
 	</div>
 	<!-- Coluna Dados -->
 	<div class="
@@ -90,345 +124,11 @@ p{
 	col-md-3
 	col-xs-12
 	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
+	<h2><?php echo $beers[$i-1] ?></h2>
+	<a href="<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
+</p>
 </div>
 </div>
-<div class="mesa" style="background-image: url(_/images/marcas/1/mesa.jpg)"></div>
+<div class="mesa" style="background-image: url(_/images/marcas/<?php echo $i ?>/mesa.jpg)"></div>
 </div>
-
-
-<!-- Produto 2-->
-<div class="marca " style="background-image: url(_/images/marcas/2/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/2/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/2/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 3 -->
-<div class="marca " style="background-image: url(_/images/marcas/3/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/3/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/3/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 4 -->
-<div class="marca " style="background-image: url(_/images/marcas/4/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/4/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/4/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 5 -->
-<div class="marca " style="background-image: url(_/images/marcas/5/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/5/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/5/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 6 -->
-<div class="marca " style="background-image: url(_/images/marcas/6/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/6/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/6/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 7 -->
-<div class="marca " style="background-image: url(_/images/marcas/7/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/7/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/7/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 8 -->
-<div class="marca " style="background-image: url(_/images/marcas/8/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/8/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/8/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 9 -->
-<div class="marca " style="background-image: url(_/images/marcas/9/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/9/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/9/mesa.jpg)"></div>
-</div>
-
-<!-- Produto 10 -->
-<div class="marca " style="background-image: url(_/images/marcas/10/background.jpg">
-	<div class="row">
-		<!-- Coluna img -->
-		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="center-block img-responsive slide-image" src="_/images/marcas/10/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<p>
-		<h2>CERVEJA MALTA PILSEN</h2>
-	</p>
-	<p>
-		Embalagens:<br>
-		Garrafa retornável 600 ml<br>
-		Lata 473 ml<br>
-		Lata 350 ml<br>
-		Lata 269 ml<br>
-	</p>
-	<p>
-		<a href="malta-pilsen" class="see-more">Veja Mais</a>
-	</p>
-</div>
-</div>
-<div class="mesa" style="background-image: url(_/images/marcas/10/mesa.jpg)"></div>
-</div>
+<?php }?>
