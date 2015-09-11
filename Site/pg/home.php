@@ -27,16 +27,23 @@
 			</div>
 		</a>
 
-		<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
-			<span><i class="icon-users"></i></span>
-			<h4>EQUIPE</h4>
-			<p></p>
-		</div>
-		<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
-			<span><i class="icon-truck"></i></span>
-			<h4>DISTRIBUIÇÃO</h4>
-			<p></p>
-		</div>
+		<a href="equipe">
+			<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+				<span><i class="icon-users"></i></span>
+				<h4>EQUIPE</h4>
+				<p></p>
+			</div>
+		</a>
+
+
+		<a href="distribuicao">
+			<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
+				<span><i class="icon-truck"></i></span>
+				<h4>DISTRIBUIÇÃO</h4>
+				<p></p>
+			</div>
+		</a>
+
 	</div>
 </section>
 

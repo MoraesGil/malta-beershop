@@ -34,7 +34,7 @@ $db = new Mysql();
 <?php
 if (isset($_GET['pg'])){
   $pagina = $_GET['pg'];
-  if($pagina == "home") { echo 'class="home"'; }
+  if($pagina == "home") { echo 'class=""'; }
   else if ($pagina == "404") { echo 'class="page-404"'; }
   else if ($pagina == "contato") { echo 'class="blog"'; }
   else if ($pagina == "empresa") { echo 'class="blog_classic"'; }
@@ -48,7 +48,7 @@ if (isset($_GET['pg'])){
   else if ($pagina == "malta-chopp") { echo 'class="blog_classic"'; }
   else if ($pagina == "malta-pilsen-sem-alcool") { echo 'class="blog_classic"'; }
   else if ($pagina == "club-soda-cristalina") { echo 'class="blog_classic"'; }
-  else if ($pagina == "marcas") { echo 'class="home home3"'; }
+  // else if ($pagina == "marcas") { echo 'class="home home3"'; }
   else { echo 'class="page-404"';} }
   else { echo 'class="home"';}
 
@@ -91,7 +91,7 @@ if (isset($_GET['pg'])){
                 </li>
               </ul>
             </div>
-            
+
           </div>
         </div>
       </div>

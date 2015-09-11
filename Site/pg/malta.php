@@ -1,3 +1,11 @@
+<?php
+if(isset($_REQUEST['marca'])) {
+  $marca = $_REQUEST['marca'];
+}
+
+
+?>
+
 <div style="background:url(_/images/pilsen-bc.jpg) #652600 no-repeat; width:100%">
   <div class="container blog_classic_posts">
     <div class="row">

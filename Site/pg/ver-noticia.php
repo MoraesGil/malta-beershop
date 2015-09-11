@@ -1,11 +1,11 @@
-<?php 
+<?php
 if(isset($_REQUEST['id'])) {
     $id = $_REQUEST['id'];
 }
 
 $db->conecta();
 $db->query("SELECT * FROM `noticias` WHERE not_id ='".$id."' AND not_view = 'S';")->fetchAll();
-   			 if ( $db->rows >= 1 ) 
+   			 if ( $db->rows >= 1 )
 				{ // linhas
    			  foreach ( $db->data as $conteudo )
        			{// loop conteudo
@@ -24,10 +24,10 @@ $db->query("SELECT * FROM `noticias` WHERE not_id ='".$id."' AND not_view = 'S';
 						<li class="active"><?php echo $cont->not_titulo ?></li>
 					</ol>
 				</div>
-		
+
 			</div>
-		</div>	
-	</section>	
+		</div>
+	</section>
 	<div class="container blog_classic_posts">
 		<div class="row">
 			<div class="col-sm-8">
@@ -36,8 +36,8 @@ $db->query("SELECT * FROM `noticias` WHERE not_id ='".$id."' AND not_view = 'S';
                <div class="share-box">
 				<h4>Compartilhe este Post!</h4>
 				<ul class="social-networks social-networks-dark">
-						
-						
+
+
                     <li class="facebook">
 						<a href="http://www.facebook.com/share.php?u='url'&title='titulo'" target="_blank">
 							Facebook
@@ -49,43 +49,43 @@ $db->query("SELECT * FROM `noticias` WHERE not_id ='".$id."' AND not_view = 'S';
 						</div>
 					</li>
 
-                        
-                        
+
+
 			</ul>
-			</div>											
+			</div>
 						<img src="_/images/noticias/ref.jpg"  alt="Image Post" class="blog-post-teaser-image img-responsive">
 						<h2 class="blog-post-title">
 							<a href="#">Chopp Malta no evento da Revista Classe A em Oswaldo Cruz</a>
 						</h2>
 						<p class="blog-post-teaser-text">
-							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento. 
+							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento.
 						</p>
                         <p class="blog-post-teaser-text">
-							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento. 
+							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento.
 						</p>
                         <p class="blog-post-teaser-text">
-							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento. 
+							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento.
 						</p>
                         <p class="blog-post-teaser-text">
-							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento. 
+							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento.
 						</p>
                         <p class="blog-post-teaser-text">
-							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento. 
+							Em parceria com a distribuidora de chopp de Oswaldo Cruz, Chopp Express, participamos do evento de lançamento da revista Classe A. Quase 300 pessoas passaram pelo local e puderam degustar um chopp gelado conosco. O evento foi um sucesso! Para os responsáveis pelo evento, o gerente comercial Isótico e o distribuidor e parceiro Leonardo fica o nosso agradecimento.
 						</p>
 					</div>
 				</div>
-                
+
 <link href="_/js/ImgResize/imgLiquid.js.css" type="text/css" rel="stylesheet" />
 <script src="_/js/vendor/jquery-1.11.1.min.js"></script>
-<script src="_/js/vendor/jquery-migrate-1.2.1.min.js"></script> 
-<script src ="_/js/ImgResize/imgLiquid-min.js" type="text/javascript"></script> 
+<script src="_/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+<script src ="_/js/ImgResize/imgLiquid-min.js" type="text/javascript"></script>
                 <script type="text/javascript">
                             $(document).ready(function () {
                                 $(".imgLiquidFill").imgLiquid({fill:true});
                                 $(".imgLiquidNoFill").imgLiquid({fill:false});
                             });
-                        </script>  
-<link rel="stylesheet" href="_/js/venobox/venobox.css" type="text/css" media="screen" />		
+                        </script>
+<link rel="stylesheet" href="_/js/venobox/venobox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="_/js/venobox/venobox.js"></script>
 <script type="text/javascript" src="_/js/venobox/venobox.min.js"></script>
 <script type="text/javascript">
@@ -112,7 +112,7 @@ $db->query("SELECT * FROM `noticias` WHERE not_id ='".$id."' AND not_view = 'S';
 		frameheight: '220px'
 	});
 	})
-</script>     	                
+</script>
 <?php
 $db->conecta();
  $db->query( "select * from noticias where not_view = 's' and not_id = '".$id."';" )->fetchAll();
@@ -132,7 +132,7 @@ $db->conecta();
        		 foreach ( $fots as $fotos )
        		 {
            	 $f= ( object ) $fotos;
-			
+
 
 ?>
 
@@ -143,16 +143,16 @@ $db->conecta();
                     </a>
                         </div>
                     </div>
-                                
-                                
+
+
                                 <?php
 		} // fecha loop conteudo
 			} else { }
 	}// fecha linhas
-	} 
+	}
 	$db->fechaConexao();
-?>  
-          
+?>
+
 
 			</div>
 
@@ -179,11 +179,11 @@ $db->conecta();
         <li class="category-list"><a href="#">Todas (0)</a></li>
 	</ul>
 </div>			</div>
-		
-		</div>			
+
+		</div>
 	</div>
 </div>	<!-- Bottom Section -->
 <div class="md-overlay"></div>
 <div class="jquery-media-detect"></div>	<script type="text/javascript" src="_/js/jrating.jquery.js"></script>
 <script type="text/javascript" src="_/js/myscript.js"></script>
-<script type="text/javascript" src="_/js/modal_effects.js"></script>   
+<script type="text/javascript" src="_/js/modal_effects.js"></script>

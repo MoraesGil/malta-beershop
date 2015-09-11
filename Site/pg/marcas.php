@@ -1,21 +1,22 @@
 
 <section class="subpage-banner blog-classic-banner">
-	<div class="container">
-		<div class="row header-group">
-			<div class="col-sm-8 col-sm-12">
-				<h1>MARCAS</h1>
-				<p>MALTA CERVEJARIA</p>
-			</div>
-			<div class="col-xs-4 hidden-xs">
-				<ol class="breadcrumb navegacao">
-					<li>Você está em: </li>
-					<li><a href="home">Home</a></li>
-					<li class="active">Marcas</li>
-				</ol>
+	<section class="subpage-banner blog-classic-banner">
+		<div class="container">
+			<div class="row header-group">
+				<div class="col-sm-8 col-sm-12">
+					<h1>Marcas</h1>
+					<p>MALTA CERVEJARIA</p>
+				</div>
+				<div class="col-xs-4 hidden-xs">
+					<ol class="breadcrumb navegacao">
+						<li>Você está em: </li>
+						<li><a href="home">Home</a></li>
+						<li class="active">Marcas</li>
+					</ol>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 <style media="screen">
 .see-more {
