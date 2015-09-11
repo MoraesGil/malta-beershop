@@ -125,7 +125,7 @@ for ($i=1; $i <= 10; $i++) {
 	col-xs-12
 	">
 	<h2><?php echo $beers[$i-1] ?></h2>
-	<a href="<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
+	<a href="/<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
 </p>
 </div>
 </div>
