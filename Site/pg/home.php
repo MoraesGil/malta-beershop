@@ -125,13 +125,11 @@
 
 					</div>
 				</div>
-
-
 			</section>
 
 
 
-			<section class="twitter-section" data-type="background" data-speed="3">
+			<section class="twitter-section">
 				<div class="container">
 					<div class="row">
 						<ul id="flexiselDemo3">
