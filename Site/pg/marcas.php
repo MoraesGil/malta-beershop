@@ -1,22 +1,20 @@
-
 <section class="subpage-banner blog-classic-banner">
-	<section class="subpage-banner blog-classic-banner">
-		<div class="container">
-			<div class="row header-group">
-				<div class="col-sm-8 col-sm-12">
-					<h1>Marcas</h1>
-					<p>MALTA CERVEJARIA</p>
-				</div>
-				<div class="col-xs-4 hidden-xs">
-					<ol class="breadcrumb navegacao">
-						<li>Você está em: </li>
-						<li><a href="home">Home</a></li>
-						<li class="active">Marcas</li>
-					</ol>
-				</div>
+	<div class="container">
+		<div class="row header-group">
+			<div class="col-sm-8 col-sm-12">
+				<h1>Marcas</h1>
+				<p>MALTA CERVEJARIA</p>
+			</div>
+			<div class="col-xs-4 hidden-xs">
+				<ol class="breadcrumb navegacao">
+					<li>Você está em: </li>
+					<li><a href="home">Home</a></li>
+					<li class="active">Marcas</li>
+				</ol>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
 <style media="screen">
 .see-more {
@@ -80,16 +78,16 @@ h2{
 
 <?php
 $beers = array(
-"MALTA PILSEN",
-"MALTA PILSEN SEM ÁLCOOL",
-"MALTA MALZBIER",
-"MALTA MALZBIER SEM ÁLCOOL",
-"GOLDEN BEER",
-"MALTA CHOPP",
-"CRISTALINA",
-"TRIPICOLA",
-"CLUB SODA",
-"NATPOWER ENERGY DRINK"
+	"MALTA PILSEN",
+	"MALTA PILSEN SEM ÁLCOOL",
+	"MALTA MALZBIER",
+	"MALTA MALZBIER SEM ÁLCOOL",
+	"GOLDEN BEER",
+	"MALTA CHOPP",
+	"CRISTALINA",
+	"TRIPICOLA",
+	"CLUB SODA",
+	"NATPOWER ENERGY DRINK"
 );
 
 $link= array(
@@ -108,28 +106,27 @@ $link= array(
 
 for ($i=1; $i <= 10; $i++) {
 
-?>
-<div class="marca " style="background-image: url(_/images/marcas/<?php echo $i ?>/background.jpg">
-	<div class="row">
+	?>
+	<div class="marca " style="background-image: url(_/images/marcas/<?php echo $i ?>/background.jpg">
+		<div class="row">
+			<div class="
+			col-xs-12
+			col-sm-4 col-sm-offset-3
+			col-md-3 col-md-offset-3">
+			<img class="beer" src="_/images/marcas/<?php echo $i ?>/beer.png" alt="" />
+		</div>
+		<!-- Coluna Dados -->
 		<div class="
-		col-xs-12
-		col-sm-4 col-sm-offset-3
-		col-md-3 col-md-offset-3
-		col-lg-3 col-lg-offset-3">
-		<img class="beer" src="_/images/marcas/<?php echo $i ?>/beer.png" alt="" />
-	</div>
-	<!-- Coluna Dados -->
-	<div class="
-	col-xs-6 col-xs-offset-3
-	col-sm-4 col-sm-offset-1
-	col-md-3
-	col-xs-12
-	">
-	<h2><?php echo $beers[$i-1] ?></h2>
-	<a href="/<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
-</p>
+		col-xs-6 col-xs-offset-3
+		col-sm-4 col-sm-offset-1
+		col-md-3
+		">
+		<h2><?php echo $beers[$i-1] ?></h2>
+		<a href="/<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
+	</p>
 </div>
 </div>
-<div class="mesa" style="background-image: url(_/images/marcas/<?php echo $i ?>/mesa.jpg)"></div>
+<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $i ?>/mesa.jpg)">
+</div>
 </div>
 <?php }?>
