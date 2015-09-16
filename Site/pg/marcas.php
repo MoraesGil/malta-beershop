@@ -16,7 +16,7 @@
 	</div>
 </section>
 
-<style media="screen">
+<style media="all">
 .see-more {
 	/* color: #000000; */
 	text-transform: uppercase;
@@ -83,56 +83,41 @@ h2{
 
 <?php
 $beers = array(
-	"MALTA PILSEN",
-	"MALTA PILSEN SEM ÁLCOOL",
-	"MALTA MALZBIER",
-	"MALTA MALZBIER SEM ÁLCOOL",
-	"GOLDEN BEER",
-	"MALTA CHOPP",
-	"CRISTALINA",
-	"TRIPICOLA",
-	"CLUB SODA",
-	"NATPOWER ENERGY DRINK"
+	1=>array("MALTA PILSEN","pilsen","#932017"),
+	2=>array("MALTA PILSEN SEM ÁLCOOL","pilsen-sem-alcool","#1e76a0"),
+	3=>array("MALTA MALZBIER","malzibier","#088a36"),
+	4=>array("MALTA MALZBIER SEM ÁLCOOL","malzibier-sem-alcool","#00a02b"),
+	5=>array("GOLDEN BEER","golden-beer","#fbc300"),
+	6=>array("MALTA CHOPP","malta-chopp","#372d22"),
+	7=>array("CRISTALINA","cristalina","#0d465b"),
+	8=>array("TRIPICOLA","tripicola","#790d1e"),
+	9=>array("CLUB SODA","club-soda","#3a656b"),
+	10=>array("NATPOWER ENERGY DRINK","natpower","#160100")
 );
 
-$link= array(
-	"pilsen",
-	"pilsen-sem-alcool",
-	"malzibier",
-	"malzibier-sem-alcool",
-	"golden-beer",
-	"malta-chopp",
-	"cristalina",
-	"tripicola",
-	"club-soda",
-	"natpower"
-);
-
-
-for ($i=1; $i <= 10; $i++) {
-
+foreach ($beers as $key => $value) {
 	?>
-	<div class="marca " style="background-image: url(_/images/marcas/<?php echo $i ?>/background.jpg">
+	<div class="marca " style="background-image: url(_/images/marcas/<?php echo $key; ?>/background.jpg">
 		<div class="row">
 			<div class="col-desc
 			col-xs-9 col-xs-offset-3
 			col-sm-4 col-sm-offset-1 col-sm-push-5
 			col-md-3 col-md-push-5
 			">
-			<h2><?php echo $beers[$i-1] ?></h2>
-			<a href="/<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
+			<h2><?php echo $beers[$key][0]; ?></h2>
+			<a href="/<?php echo $beers[$key][1];?>" class="see-more" style="color: <?php echo $beers[$key][2]; ?>">Veja Mais</a>
 		</div>
 
 			<div class="
 			col-xs-12
 			col-sm-4 col-sm-offset-3 col-sm-pull-6
 			col-md-3 col-md-offset-3 col-md-pull-4">
-			<img class="beer img-responsive" src="_/images/marcas/<?php echo $i ?>/beer.png" alt="" />
+			<img class="beer img-responsive" src="_/images/marcas/<?php echo $key;?>/beer.png" alt="" />
 		</div>
 
 
 </div>
-<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $i ?>/mesa.jpg)">
+<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $key; ?>/mesa.jpg)">
 </div>
 </div>
 <?php }?>
