@@ -21,7 +21,7 @@
 	/* color: #000000; */
 	text-transform: uppercase;
 	font-weight: 300;
-	padding: 15px 30px;
+	padding: 5px 30px;
 	-webkit-box-shadow: 0 4px 0 #bdc3c7;
 	box-shadow: 0 4px 0 #bdc3c7;
 	-webkit-border-radius: 3px;
@@ -31,6 +31,11 @@
 	position: relative;
 	top: 0;
 }
+
+.col-desc{
+	margin-bottom: 40px;
+}
+
 .see-more:hover{
 	background-color: #ffd32c;
 	text-decoration: none;
@@ -58,7 +63,7 @@ h2{
 	width: 100%;
 	display: block;
 	padding-top: 20px;
-	height: auto;
+	/*height: 400px;*/
 }
 
 .mesa{
@@ -68,7 +73,7 @@ h2{
 
 .beer{
 	width: auto;
-	height: 500px;
+	/*height: 500px;*/
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -109,22 +114,23 @@ for ($i=1; $i <= 10; $i++) {
 	?>
 	<div class="marca " style="background-image: url(_/images/marcas/<?php echo $i ?>/background.jpg">
 		<div class="row">
+			<div class="col-desc
+			col-xs-9 col-xs-offset-3
+			col-sm-4 col-sm-offset-1 col-sm-push-5
+			col-md-3 col-md-push-5
+			">
+			<h2><?php echo $beers[$i-1] ?></h2>
+			<a href="/<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
+		</div>
+
 			<div class="
 			col-xs-12
-			col-sm-4 col-sm-offset-3
-			col-md-3 col-md-offset-3">
-			<img class="beer" src="_/images/marcas/<?php echo $i ?>/beer.png" alt="" />
+			col-sm-4 col-sm-offset-3 col-sm-pull-6
+			col-md-3 col-md-offset-3 col-md-pull-4">
+			<img class="beer img-responsive" src="_/images/marcas/<?php echo $i ?>/beer.png" alt="" />
 		</div>
-		<!-- Coluna Dados -->
-		<div class="
-		col-xs-6 col-xs-offset-3
-		col-sm-4 col-sm-offset-1
-		col-md-3
-		">
-		<h2><?php echo $beers[$i-1] ?></h2>
-		<a href="/<?php echo $link[$i-1]?>" class="see-more">Veja Mais</a>
-	</p>
-</div>
+
+
 </div>
 <div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $i ?>/mesa.jpg)">
 </div>
