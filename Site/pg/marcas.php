@@ -32,7 +32,6 @@
 	top: 0;
 }
 
-
 .see-more:hover{
 	background-color: #ffd32c;
 	text-decoration: none;
@@ -45,7 +44,7 @@ h2{
 	box-sizing: border-box;
 	color: white;
 	font-family: helvetica;
-	font-size: 2em;
+
 	margin-bottom: 40px;
 	margin-top: 40px;
 	text-align: left;
@@ -53,9 +52,16 @@ h2{
 	border-bottom:1px solid white;
 }
 
+@media (max-width: 768px) {
+	h2{
+		padding-left: 10%;
+		padding-right:10%;
+	}
+}
+
 .marca{
 	background-repeat: no-repeat center center fixed;
-	/*background-size: cover;*/
+	background-size: cover;
 	width: 100%;
 	/*display: block;*/
 	padding-top: 10px;
@@ -100,23 +106,24 @@ foreach ($beers as $key => $value) {
 			col-xs-12
 			col-sm-4 col-sm-offset-1 col-sm-push-5
 			col-md-3 col-md-push-5
+			col-lg-3 col-lg-push-5
 			">
 
 			<h2><?php echo $beers[$key][0]; ?></h2>
 			<a href="/<?php echo $beers[$key][1];?>" class="see-more" style="color: <?php echo $beers[$key][2]; ?>">Veja Mais</a>
-			<br><br>
+			<br>
+			<br>
 		</div>
 
 		<div class="
 		col-xs-12
 		col-sm-4 col-sm-offset-3 col-sm-pull-6
-		col-md-3 col-md-offset-3 col-md-pull-4">
+		col-md-3 col-md-offset-3 col-md-pull-4
+		col-lg-3 col-lg-offset-3 col-lg-pull-4">
 		<img class="beer img-responsive" src="_/images/marcas/<?php echo $key;?>/beer.png" alt="" />
 	</div>
 
-
 </div>
-<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $key; ?>/mesa.jpg)">
-</div>
+<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $key; ?>/mesa.jpg)"></div>
 </div>
 <?php }?>

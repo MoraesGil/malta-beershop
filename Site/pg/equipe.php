@@ -31,10 +31,10 @@
           <p class="blog-post-teaser-text">
             <p> A Cervejaria Malta conta com colaboradores capacitados na Europa e nos melhores centros educacionais de nosso país, a preocupação constante da educação continuada de seus colaboradores se reflete na qualidade de seus produtos e no reconhecimento de seus consumidores.
 
-Hoje conta com áreas específicas de controle de qualidade, produção, manutenção, utilidades, expedição e administração. Formando uma estrutura operacional composta por técnicos que controlam toda cadeia produtiva iniciando com a seleção das melhores matérias-primas aliada a equipamentos de última geração e constante aprimoramento de seus colaboradores.</p>
-          </p>
+              Hoje conta com áreas específicas de controle de qualidade, produção, manutenção, utilidades, expedição e administração. Formando uma estrutura operacional composta por técnicos que controlam toda cadeia produtiva iniciando com a seleção das melhores matérias-primas aliada a equipamentos de última geração e constante aprimoramento de seus colaboradores.</p>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
