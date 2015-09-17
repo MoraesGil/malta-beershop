@@ -116,7 +116,7 @@ foreach ($beers as $key => $value) {
 
 
 </div>
-<div class="mesa row" style="background-image: url(_/images/marcas/1/mesa.jpg)">
+<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $key; ?>/mesa.jpg)">
 </div>
 </div>
 <?php }?>
