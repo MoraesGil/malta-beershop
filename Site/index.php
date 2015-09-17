@@ -32,27 +32,27 @@ $db = new Mysql();
 
 <body
 <?php
-if (isset($_GET['pg'])){
-  $pagina = $_GET['pg'];
-  if($pagina == "home") { echo 'class="blog_classic"'; }
-  else if ($pagina == "404") { echo 'class="page-404"'; }
-  else if ($pagina == "contato") { echo 'class="blog"'; }
-  else if ($pagina == "empresa") { echo 'class="blog_classic"'; }
-  else if ($pagina == "noticias") { echo 'class="blog_classic"'; }
-  else if ($pagina == "noticias-mes") { echo 'class="blog_classic"'; }
-  else if ($pagina == "ver-noticia") { echo 'class="portfolio-page"'; }
-  else if ($pagina == "golden-beer") { echo 'class="blog_classic"'; }
-  else if ($pagina == "tropicola") { echo 'class="blog_classic"'; }
-  else if ($pagina == "malta-chopp") { echo 'class="blog_classic"'; }
-  else if ($pagina == "natpower-energy-drink") { echo 'class="blog_classic"'; }
-  else if ($pagina == "malta-chopp") { echo 'class="blog_classic"'; }
-  else if ($pagina == "malta-pilsen-sem-alcool") { echo 'class="blog_classic"'; }
-  else if ($pagina == "club-soda-cristalina") { echo 'class="blog_classic"'; }
-  else if ($pagina == "marcas") { echo 'class="blog_classic"'; }
-  else { echo 'class="page-404"';} }
-  else { echo 'class="blog_classic"';}
-
-  ?>
+// if (isset($_GET['pg'])){
+//   $pagina = $_GET['pg'];
+//   if($pagina == "home") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "404") { echo 'class="page-404"'; }
+//   else if ($pagina == "contato") { echo 'class="blog"'; }
+//   else if ($pagina == "empresa") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "noticias") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "noticias-mes") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "ver-noticia") { echo 'class="portfolio-page"'; }
+//   else if ($pagina == "golden-beer") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "tropicola") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "malta-chopp") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "natpower-energy-drink") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "malta-chopp") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "malta-pilsen-sem-alcool") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "club-soda-cristalina") { echo 'class="blog_classic"'; }
+//   else if ($pagina == "marcas") { echo 'class="blog_classic"'; }
+//   else { echo 'class="page-404"';} }
+//   else { echo 'class="blog_classic"';}
+//
+//   ?>
   >
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">

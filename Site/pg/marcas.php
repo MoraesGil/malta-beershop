@@ -55,9 +55,9 @@ h2{
 
 .marca{
 	background-repeat: no-repeat center center fixed;
-	background-size: cover;
+	/*background-size: cover;*/
 	width: 100%;
-	display: block;
+	/*display: block;*/
 	padding-top: 10px;
 	/*height: 400px;*/
 }
