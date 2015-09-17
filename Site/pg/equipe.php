@@ -26,7 +26,7 @@
         </div>
         <div class="col-sm-10 blog-post-teaser">
           <h2 class="blog-post-title">
-            <a href="ver-noticia">Empresa</a>
+            <a href="ver-noticia">Equipe</a>
           </h2>
           <p class="blog-post-teaser-text">
             <p> A Cervejaria Malta conta com colaboradores capacitados na Europa e nos melhores centros educacionais de nosso país, a preocupação constante da educação continuada de seus colaboradores se reflete na qualidade de seus produtos e no reconhecimento de seus consumidores.
