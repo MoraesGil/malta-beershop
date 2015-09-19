@@ -40,16 +40,23 @@
 	box-shadow: 0 4px 0 #e2bf3a;
 }
 
+.container{
+	padding-right: 0;
+	padding-left: 0;
+}
+
 h2{
 	box-sizing: border-box;
 	color: white;
 	font-family: helvetica;
-
+	font-weight:bold;
+	text-shadow: 1px 1px 2px #000000;
 	margin-bottom: 40px;
 	margin-top: 40px;
 	text-align: left;
 	text-transform: uppercase;
-	border-bottom:1px solid white;
+	border-bottom:2px solid white;
+	border
 }
 
 @media (max-width: 768px) {
@@ -60,12 +67,13 @@ h2{
 }
 
 .marca{
-	background-repeat: no-repeat center center fixed;
+	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	/*display: block;*/
-	padding-top: 10px;
-	/*height: 400px;*/
+	display: block;
+	padding-top: 10px
+	margin-left: 10px;
+
 }
 
 .mesa{
@@ -80,9 +88,11 @@ h2{
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
 </style>
-
 
 <?php
 $beers = array(
@@ -100,11 +110,9 @@ $beers = array(
 
 foreach ($beers as $key => $value) {
 	?>
-	<div class="marca" style="background-image: url(_/images/marcas/<?php echo $key; ?>/background.jpg)">
+	<div class="marca" style="background-image: url(_/images/marcas/<?php echo $key; ?>/background.jpg);">
 		<div class="row">
-			<div class="col-desc text-center
-			col-xs-12
-			col-sm-4 col-sm-offset-1 col-sm-push-5
+			<div class=" text-center col-xs-12 col-sm-4 col-sm-offset-1 col-sm-push-5
 			col-md-3 col-md-push-5
 			col-lg-3 col-lg-push-5
 			">
@@ -113,7 +121,7 @@ foreach ($beers as $key => $value) {
 			<a href="/<?php echo $beers[$key][1];?>" class="see-more" style="color: <?php echo $beers[$key][2]; ?>">Veja Mais</a>
 			<br>
 			<br>
-		</div>
+			</div>
 
 		<div class="
 		col-xs-12
@@ -121,9 +129,10 @@ foreach ($beers as $key => $value) {
 		col-md-3 col-md-offset-3 col-md-pull-4
 		col-lg-3 col-lg-offset-3 col-lg-pull-4">
 		<img class="beer img-responsive" src="_/images/marcas/<?php echo $key;?>/beer.png" alt="" />
+		</div>
+		</div>
+		<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $key; ?>/mesa.jpg)">
+		</div>
 	</div>
 
-</div>
-<div class="mesa row" style="background-image: url(_/images/marcas/<?php echo $key; ?>/mesa.jpg)"></div>
-</div>
-<?php }?>
+	<?php }?>

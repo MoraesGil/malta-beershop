@@ -41,6 +41,8 @@ if (isset($_GET['pg']))
     break;
     case "home":  echo 'class="blog_classic"';
     break;
+    case "marcas":  echo 'class="blog_classic"';
+    break;
     case "empresa":  echo 'class="blog_classic"';
     break;
     case "equipe":  echo 'class="blog_classic"';
@@ -120,6 +122,7 @@ if (isset($_GET['pg']))
     </div>
   </div>
 </nav><!-- Main Navigation -->
+
 <!-- INTERNAS -->
 <?php
 if (isset($_GET['pg']))
@@ -138,11 +141,9 @@ else {
 ?>
 <!-- /INTERNAS -->
 
-
-
-<footer>
+<footer style="background:#ffd32c">
   <div class="container">
-    <span style="float:left;padding-left:10px; color:#FFF;">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados </span>
+    <span style="float:left;padding-left:10px;">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados </span>
     <a href="http://www.ataquepropaganda.com.br/" title="Ataque Propaganda - &quot;Somos a agência de comunicação que mudará o seu conceito sobre propaganda, marketing, planejamento e RESULTADOS&quot;." target="_blank" style="float:right;padding-left:10px;"><img src="_/images/logo-atq.png" alt="image"></a>
   </div>
 </footer>
