@@ -4,7 +4,7 @@
   padding-top:15%;
   padding-left:3%;
   padding-right: 3%;
-  background:url(_/images/marcas-detalhado/pilsen-sem-alcool/bg.jpg) #652600 no-repeat;
+  background:url(_/images/marcas-detalhado/pilsen-sem-alcool/bg.jpg) #688082 no-repeat;
   width:100%
   height: 100%;
 }
