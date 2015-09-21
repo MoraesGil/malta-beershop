@@ -34,10 +34,18 @@
   font-weight: bold;
   line-height: 0.979;
   text-align: center;
-  text-shadow: 1px 1px 2px #000000;
-  padding-bottom: 10px;
+  text-shadow: 2px 2px 3px #000000;
+  padding: 10px 10px 10px 10px;
 
 }
+
+@media (max-width: 480px) {
+	.CERVEJA_PILSEN {
+		padding-top: 15%;
+    font-size: 3em;
+	}
+}
+
 
 
 </style>
