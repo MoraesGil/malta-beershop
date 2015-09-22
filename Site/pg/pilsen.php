@@ -5,8 +5,8 @@
   padding-left:3%;
   padding-right: 3%;
   background:url(_/images/marcas-detalhado/Pilsen/bg.jpg) #652600 no-repeat;
-  width:100%
-  height: 100%;
+  width:100%;
+  background-size: cover;
 }
 
 .infomini{
