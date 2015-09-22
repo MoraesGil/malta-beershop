@@ -1,7 +1,6 @@
 <style>
 .bg{
-
-  padding-top:15%;
+  padding-top: 80px;
   padding-left:3%;
   padding-right: 3%;
   background:url(_/images/marcas-detalhado/pilsen-sem-alcool/bg.jpg) #688082 no-repeat;
