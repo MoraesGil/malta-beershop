@@ -10,12 +10,13 @@
 }
 
 .infomini{
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Helvetica";
   color: #CF1318;
   line-height: 1.226;
   text-align: center;
   padding-top: 5%;
+  font-weight: bold;
 }
 .seta{
   margin-top: 20px;
@@ -28,14 +29,14 @@
 }
 
 #info{
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Helvetica";
   color: #CF1318;
   font-weight: bold;
   line-height: 1.226;
   text-align: left;
   margin-top: 20px;
-  text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 1px #000000;
 }
 
 #info em{
