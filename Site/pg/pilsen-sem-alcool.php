@@ -27,24 +27,24 @@
 }
 
 .titulo {
-  font-size: 5em;
+  font-size: 60px;
   font-family: "Helvetica";
   color: rgb(0, 81, 131);
   font-weight: bold;
   line-height: 0.979;
-  text-align: center;
+  text-align: left;
   text-shadow: 2px 2px 3px #000000;
   padding: 10px 10px 10px 10px;
 
 }
-
-
-
-
+@media (max-width: 991px) {
+  .titulo {
+    text-align: center;
+  }
+}
 @media (max-width: 480px) {
   .titulo {
     padding-top: 15%;
-    font-size: 3em;
   }
 }
 
@@ -57,7 +57,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="row">
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-12 col-lg-12">
             <div class="titulo">
               <em>
                 <p>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen-sem-alcool/1.png" alt="" />
             <div class="infomini">
               <p>
@@ -84,7 +84,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen-sem-alcool/2.png" alt="" />
             <div class="infomini">
               <p>
