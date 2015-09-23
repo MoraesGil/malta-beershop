@@ -28,7 +28,7 @@
 }
 
 .CERVEJA_PILSEN {
-  font-size: 5em;
+  font-size: 55px;
   font-family: "Helvetica";
   color: rgb(207, 19, 24);
   font-weight: bold;
@@ -41,7 +41,6 @@
 
 @media (max-width: 480px) {
 	.CERVEJA_PILSEN {
-		padding-top: 15%;
     font-size: 3em;
 	}
 }
