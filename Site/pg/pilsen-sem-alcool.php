@@ -27,7 +27,7 @@
 }
 
 .titulo {
-  font-size: 60px;
+  font-size: 55px;
   font-family: "Helvetica";
   color: rgb(0, 81, 131);
   font-weight: bold;
@@ -39,14 +39,11 @@
 }
 @media (max-width: 991px) {
   .titulo {
+    font-size: 3em;
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .titulo {
-    padding-top: 15%;
-  }
-}
+
 
 
 
