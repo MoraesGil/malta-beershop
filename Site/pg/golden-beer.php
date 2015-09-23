@@ -12,7 +12,7 @@
 .infomini{
   font-size: 25px;
   font-family: "Helvetica";
-  color: rgb(252, 248, 247);
+  color: #CF1318;
   line-height: 1.226;
   text-align: center;
   padding-top: 5%;
@@ -30,12 +30,12 @@
 #info{
   font-size: 20px;
   font-family: "Helvetica";
-  color: rgb(255, 255, 255);
+  color: #CF1318;
   font-weight: bold;
   line-height: 1.226;
   text-align: left;
   margin-top: 20px;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 #info em{
@@ -94,7 +94,7 @@
 
         <!-- miniaturas -->
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/golden-beer/1.png" alt="" />
             <div class="infomini">
               <p>
@@ -106,7 +106,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/golden-beer/2.png" alt="" />
             <div class="infomini">
               <p>
@@ -130,7 +130,7 @@
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-4">
-                <img class="img-responsive pull-right seta hidden-xs hidden-sm" src="_/images/marcas-detalhado/golden-beer/principal2.png" alt="" />
+                <img class="img-responsive center-block seta hidden-xs hidden-sm" src="_/images/marcas-detalhado/golden-beer/principal2.png" alt="" />
               </div>
               <div class="col-md-8" id="info">
                 <p>
