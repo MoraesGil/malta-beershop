@@ -45,7 +45,7 @@
 
 
 .titulo {
-  font-size: 5em;
+  font-size: 55px;
   font-family: "Helvetica";
   color: #CF1318;
   font-weight: bold;
