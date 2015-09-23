@@ -16,6 +16,7 @@
   line-height: 1.226;
   text-align: center;
   padding-top: 5%;
+  font-weight: bold;
 }
 .seta{
   margin-top: 20px;
