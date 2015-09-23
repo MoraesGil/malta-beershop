@@ -15,6 +15,7 @@
   line-height: 1.226;
   text-align: center;
   padding-top: 5%;
+  font-weight: bold;
 }
 .seta{
   margin-top: 20px;
@@ -27,7 +28,7 @@
 }
 
 .titulo {
-  font-size: 60px;
+  font-size: 55px;
   font-family: "Helvetica";
   color: rgb(0, 81, 131);
   font-weight: bold;
@@ -39,14 +40,11 @@
 }
 @media (max-width: 991px) {
   .titulo {
+    font-size: 3em;
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .titulo {
-    padding-top: 15%;
-  }
-}
+
 
 
 
