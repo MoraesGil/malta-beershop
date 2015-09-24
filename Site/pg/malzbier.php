@@ -16,6 +16,7 @@
   line-height: 1.226;
   text-align: center;
   padding-top: 5%;
+  font-weight: bold;
 }
 .seta{
   margin-top: 20px;
@@ -44,7 +45,7 @@
 
 
 .titulo {
-  font-size: 5em;
+  font-size: 55px;
   font-family: "Helvetica";
   color: rgb(0, 63, 10);
   font-weight: bold;
@@ -77,15 +78,13 @@
       <div class="col-md-12">
         <!-- titulo -->
         <div class="row">
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-12 col-lg-12">
             <div class="titulo">
               <em>
                 <p>
-                  CERVEJA
+                  CERVEJA MALZBIER
                 </p>
-                <p>
-                  MALZBIER
-                </p>
+
               </em>
 
             </div>
@@ -118,7 +117,7 @@
           </div>
 
           <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/malzbier/2.png" alt="" />
+            <img class="img-responsive center-block" src="_/images/marcas-detalhado/malzbier/3.png" alt="" />
             <div class="infomini">
               <p>
                 Lata
