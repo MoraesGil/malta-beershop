@@ -98,8 +98,8 @@ h2{
 $beers = array(
 	1=>array("MALTA PILSEN","pilsen","#932017"),
 	2=>array("MALTA PILSEN SEM ÁLCOOL","pilsen-sem-alcool","#1e76a0"),
-	3=>array("MALTA MALZBIER","malzibier","#088a36"),
-	4=>array("MALTA MALZBIER SEM ÁLCOOL","malzibier-sem-alcool","#00a02b"),
+	3=>array("MALTA MALZBIER","malzbier","#088a36"),
+	4=>array("MALTA MALZBIER SEM ÁLCOOL","malzbier-sem-alcool","#00a02b"),
 	5=>array("GOLDEN BEER","golden-beer","#fbc300"),
 	6=>array("MALTA CHOPP","malta-chopp","#372d22"),
 	7=>array("CRISTALINA","cristalina","#0d465b"),
