@@ -47,7 +47,7 @@
 .titulo {
   font-size: 55px;
   font-family: "Helvetica";
-  color: #ccc;
+  color: #FFF;
   font-weight: bold;
   line-height: 0.979;
   text-align: left;
