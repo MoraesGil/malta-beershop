@@ -70,7 +70,7 @@
 }
 
 .btn-zero {
-  color: #CCC;
+  color: #FE0005;
   text-transform: uppercase;
   font-weight: 10;
   padding: 5px 30px;
@@ -81,10 +81,13 @@
   top: 0;
   font-weight: bold;
   font-style: italic;
+  margin-bottom: 20px;
+  margin-top:10px;
+
 }
 
 a:hover, a:focus {
-    color: #FE0005;
+    color: #CCC;
     text-decoration: none;
 }
 </style>
@@ -95,22 +98,33 @@ a:hover, a:focus {
       <div class="col-md-12">
         <!-- titulo -->
         <div class="row">
-          <div class="col-md-12 col-lg-12">
-            <div class="pull-right">
-              <a id="btn-change" class="btn-zero" href="tropicola-zero">Tropicola Zero</a>
-            </div>
-            <div class="titulo">
+          <div class="col-md-12">
+
+            <div class="titulo
+            col-xs-12
+             col-sm-8
+             col-md-9
+             col-lg-9">
               <em>
                 <p>
                   TROPICOLA
                 </p>
               </em>
             </div>
+
+            <div class="text-center btn-box
+              col-xs-12
+              col-sm-4
+              col-md-3
+              col-lg-3">
+              <a id="btn-change" class="btn-zero btn-block" href="tropicola-zero">Tropicola Zero</a>
+            </div>
+
           </div>
         </div>
         <!-- miniaturas -->
         <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/tropicola/1.png" alt="" />
             <div class="infomini">
               <p>
@@ -122,7 +136,7 @@ a:hover, a:focus {
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/tropicola/2.png" alt="" />
             <div class="infomini">
               <p>
@@ -134,7 +148,7 @@ a:hover, a:focus {
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/tropicola/3.png" alt="" />
             <div class="infomini">
               <p>
@@ -146,7 +160,7 @@ a:hover, a:focus {
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/tropicola/4.png" alt="" />
             <div class="infomini">
               <p>
