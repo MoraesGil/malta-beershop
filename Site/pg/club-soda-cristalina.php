@@ -11,7 +11,7 @@
 .infomini{
   font-size: 25px;
   font-family: "Helvetica";
-  color: rgb(252, 248, 247);
+  color: #0f9b8c;
   line-height: 1.226;
   text-align: center;
   padding-top: 5%;
@@ -30,11 +30,11 @@
 .titulo {
   font-size: 55px;
   font-family: "Helvetica";
-  color: #0A774A;
+  color: #0f9b8c;
   font-weight: bold;
   line-height: 0.979;
   text-align: left;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 2px 2px 3px #FFF;
   padding: 10px 10px 10px 10px;
 
 }
@@ -54,11 +54,12 @@
 #info{
   font-size: 20px;
   font-family: "Helvetica";
-  color: #0A774A;
+  color: #0f9b8c;
   font-weight: bold;
   line-height: 1.226;
   text-align: left;
   margin-top: 20px;
+  text-shadow: 2px 2px 3px #FFF;
 
 }
 
