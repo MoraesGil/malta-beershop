@@ -103,9 +103,9 @@ $beers = array(
 	5=>array("GOLDEN BEER","golden-beer","#fbc300"),
 	6=>array("MALTA CHOPP","malta-chopp","#372d22"),
 	7=>array("CRISTALINA","cristalina","#0d465b"),
-	8=>array("TRIPICOLA","tripicola","#790d1e"),
-	9=>array("CLUB SODA","club-soda","#3a656b"),
-	10=>array("NATPOWER ENERGY DRINK","natpower","#160100")
+	8=>array("TROPICOLA","tropicola","#790d1e"),
+	9=>array("CLUB SODA CRISTALINA","club-soda-cristalina","#3a656b"),
+	10=>array("NATPOWER ENERGY DRINK","natpower-energy-drink","#160100")
 );
 
 foreach ($beers as $key => $value) {
