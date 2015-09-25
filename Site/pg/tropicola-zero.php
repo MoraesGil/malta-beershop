@@ -71,18 +71,18 @@
 
 .btn-zero {
   color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 10;
-    padding: 5px 30px;
-    box-shadow: 0 4px 0 #41464A;
-    border-radius: 3px;
-    background-clip: padding-box;
-    background-color: #BB1515;
-    top: 0;
-    font-weight: bold;
-    font-style: italic;
-    margin-bottom: 20px;
-    margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 10;
+  padding: 5px 30px;
+  box-shadow: 0 4px 0 #41464A;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #BB1515;
+  top: 0;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+  margin-top: 10px;
 
 }
 
@@ -163,35 +163,38 @@ a:hover, a:focus {
             <div id="info">
               <p>
                 Informação Nutricional: <br>
-                <em>Teor Calórico: 80 kcal/200 ml</em>
+                <em>Teor Calórico: 14 kcal/200 ml</em>
 
               </p>
               <p>
                 Ingredientes: <br>
-                <em>Água gaseificada, Extrato de noz de cola, Edulcorantes artificiais: Ciclamato - INS 952 (90 mg), Sacarina - INS 954 (9 mg), Sucralose - INS 955 (3,24 mg) por 100 ml</em>
-              </p>
-              <p>
-                Embalagens: <br>
-                <em>
-                  Garrafa 2 litros <br>
-                  Garrafa retornável 605 ml <br>
-                  Garrafa 600 ml <br>
-                  Lata 350 ml
-                </em>
-              </p>
+                <em>Água gaseificada, Extrato de noz de cola <br>
+                  Edulcorantes artificiais: Ciclamato - INS 952 (90 mg)<br>
+                  Sacarina - INS 954 (9 mg)<br>
+                  Sucralose - INS 955 (3,24 mg) por 100 ml</em>
+                </p>
+                <p>
+                  Embalagens: <br>
+                  <em>
+                    Garrafa 2 litros <br>
+                    Garrafa retornável 605 ml <br>
+                    Garrafa 600 ml <br>
+                    Lata 350 ml
+                  </em>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 hidden-xs hidden-sm ">
-        <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/tropicola-zero/principal.png" alt="" />
+        <div class="col-md-6 hidden-xs hidden-sm ">
+          <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/tropicola-zero/principal.png" alt="" />
 
+        </div>
       </div>
+
     </div>
 
+
   </div>
-
-
-</div>
 </div>
 </div>	<!-- Bottom Section -->
