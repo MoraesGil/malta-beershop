@@ -56,6 +56,7 @@
 @media (max-width: 320px) {
 	#info{
 		font-size: 1em;
+		text-shadow: 1px 1px 1px #000000;
 	}
 }
 
@@ -82,6 +83,7 @@
 }
 </style>
 
+
 <!-- TUBAINA -->
 <div class="bg">
 	<div class="container box">
@@ -101,12 +103,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 visible-xs">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
-					</div>
-					<div class="col-xs-6 col-sm-12">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
-					</div>
+						<img class="img-responsive hidden-xs center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
 				</div>
 				<div class="row">
 					<div id="info">
@@ -157,12 +154,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 visible-xs">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
-					</div>
-					<div class="col-xs-6 col-sm-12">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
-					</div>
+						<img class="img-responsive hidden-xs center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
 				</div>
 				<div class="row">
 					<div id="info">
@@ -213,12 +205,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 visible-xs">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
-					</div>
-					<div class="col-xs-6 col-sm-12">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
-					</div>
+						<img class="img-responsive hidden-xs center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
 				</div>
 				<div class="row">
 					<div id="info">
@@ -269,12 +256,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 visible-xs">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
-					</div>
-					<div class="col-xs-6 col-sm-12">
-						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
-					</div>
+						<img class="img-responsive hidden-xs center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
 				</div>
 				<div class="row">
 					<div id="info">
