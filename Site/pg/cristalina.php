@@ -1,98 +1,308 @@
 <style media="all">
-.container{
-	padding-right: 0;
-	padding-left: 0;
+.box{
+	padding-top: 60px;
 }
-
 
 .bg{
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
-	width: 100%;
-	padding-top: 10px
-	margin-left: 10px;
+	background-size: cover;
 	background-image: url(_/images/marcas-detalhado/cristalina/bg.jpg);
-	height: 500px;
+
+}
+.foot{
+	height: 60px;
+	width: 100%;
+	margin-top: 0;
+	padding-top: 0;
+	background-size: cover;
+	background-image: url(_/images/marcas-detalhado/cristalina/footer.jpg);
 }
 
-.row{
-	margin-left: 0px;
-	margin-right: 0px;
-}
 
 #info{
-  font-size: 20px;
-  font-family: "Helvetica";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.226;
-  text-align: left;
-  margin-top: 20px;
-  text-shadow: 2px 2px 3px #000000;
+	font-size: 2em;
+	font-family: "Helvetica";
+	color: rgb(255, 29, 29);
+	font-weight: bold;
+	line-height: 1.226;
+	text-align: left;
+	margin-top: 20px;
+	text-shadow: 2px 1px 1px #000000;
 }
 
 #info em{
-  font-weight: 200;
+	font-weight: 200;
 }
-.refri{
-	max-height: 500px;
+
+@media (max-width: 992px) {
+	#info{
+		font-size: 1.5em;
+	}
+	.titulo{
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 768px) {
+	#info{
+		font-size: 1.5em;
+	}
+	.titulo{
+		font-size: 3em !important;
+		text-align: center !important;
+	}
+}
+
+@media (max-width: 320px) {
+	#info{
+		font-size: 1em;
+	}
+}
+
+.titulo {
+	font-size: 4em;
+	font-family: "Helvetica";
+	color: rgb(207, 19, 24);
+	font-weight: bold;
+	line-height: 0.979;
+	text-align: left;
+	text-shadow: 2px 2px 3px #000000;
+	padding: 10px 10px 10px 10px;
+	font-style: italic;
+
+}
+
+.row-tuba{
+	padding-top: 60px;
+}
+
+
+.tuba-principal{
+	height: 100%;
 }
 </style>
 
-<?php
-$beers = array(
-	1=>array("MALTA PILSEN","pilsen","#932017"),
-	2=>array("MALTA PILSEN SEM ÁLCOOL","pilsen-sem-alcool","#1e76a0"),
-	3=>array("MALTA MALZBIER","malzbier","#088a36"),
-	4=>array("MALTA MALZBIER SEM ÁLCOOL","malzbier-sem-alcool","#00a02b"),
-	5=>array("GOLDEN BEER","golden-beer","#fbc300")
-);
-
-foreach ($beers as $key => $value) {
-	?>
-	<div class="row bg">
-		<div class=" text-center col-xs-12 col-sm-4 col-sm-offset-1 col-sm-push-5
-		col-md-3 col-md-push-5
-		col-lg-3 col-lg-push-5
-		">
-		<div class="row">
-				<img class="img-responsive" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
-		</div>
-		<div class="row">
-			<div id="info">
-				<p>
-					Informação Nutricional: <br>
-					<em>Definição/Tipo: Cerveja Tipo Malzbier <br>
-						Graduação Alcoólica: 3,5 %</em>
-
-					</p>
-					<p>
-						Ingredientes: <br>
-						<em>Água, Malte, Carboidratos, Cereais não malteados e Lúpulo</em>
-					</p>
-					<p>
-						Embalagens: <br>
-						<em>
-							Garrafa retornável 600 ml <br>
-							Lata 473 ml <br>
-							Lata 350 ml
-						</em>
-					</p>
+<!-- TUBAINA -->
+<div class="bg">
+	<div class="container box">
+		<div class="row row-tuba">
+			<div class="col-xs-12 col-sm-6 col-md-5">
+				<img class="img-responsive center-block hidden-xs tuba-principal" src="_/images/marcas-detalhado/cristalina/1.png" alt="" />
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-7">
+				<div class="row">
+					<div class="titulo">
+						<p>
+							TUBAÍNA
+						</p>
+						<p>
+							CRISTALINA
+						</p>
+					</div>
 				</div>
+				<div class="row">
+					<div class="col-xs-6 visible-xs">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
+					</div>
+					<div class="col-xs-6 col-sm-12">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
+					</div>
+				</div>
+				<div class="row">
+					<div id="info">
+						<p>
+							Informação Nutricional: <br>
+							<em>Teor Calórico: 80 kcal/200 m</em>
+
+						</p>
+						<p>
+							Ingredientes: <br>
+							<em>Água gaseificada, Açúcar, Extrato natural de guaraná: 0,02%</em>
+						</p>
+						<p>
+							Embalagens: <br>
+							<em>
+								Garrafa 2 litros <br>
+								Garrafa 605 ml <br>
+								Garrafa 600 ml
+							</em>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
-
-		<br>
-		<br>
 	</div>
-
-	<div class="
-	col-xs-12
-	col-sm-4 col-sm-offset-3 col-sm-pull-6
-	col-md-3 col-md-offset-3 col-md-pull-4
-	col-lg-3 col-lg-offset-3 col-lg-pull-4">
-	<img class="img-responsive refri" src="_/images/marcas-detalhado/cristalina/<?php echo $key;?>.png" alt="" />
+	<div class="foot "></div>
+</div>
 </div>
 
+<!-- limao -->
+<div class="bg">
+	<div class="container box">
+		<div class="row row-tuba">
+			<div class="col-xs-12 col-sm-6 col-md-5">
+				<img class="img-responsive center-block hidden-xs tuba-principal" src="_/images/marcas-detalhado/cristalina/2.png" alt="" />
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-7">
+				<div class="row">
+					<div class="titulo">
+						<p>
+							CRISTALINA
+						</p>
+						<p>
+							LIMÃO
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 visible-xs">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
+					</div>
+					<div class="col-xs-6 col-sm-12">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
+					</div>
+				</div>
+				<div class="row">
+					<div id="info">
+						<p>
+							Informação Nutricional: <br>
+							<em>Teor Calórico: 80 kcal/200 m</em>
+
+						</p>
+						<p>
+							Ingredientes: <br>
+							<em>Água gaseificada, Açúcar, Suco de limão: 2,5%</em>
+						</p>
+						<p>
+							Embalagens: <br>
+							<em>
+								Garrafa 2 litros <br>
+								Garrafa 605 ml <br>
+								Garrafa 600 ml
+							</em>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="foot "></div>
+</div>
 </div>
 
-<?php }?>
+<!-- LARANJA -->
+<div class="bg">
+	<div class="container box">
+		<div class="row row-tuba">
+			<div class="col-xs-12 col-sm-6 col-md-5">
+				<img class="img-responsive center-block hidden-xs tuba-principal" src="_/images/marcas-detalhado/cristalina/3.png" alt="" />
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-7">
+				<div class="row">
+					<div class="titulo">
+						<p>
+							CRISTALINA
+						</p>
+						<p>
+							LARANJA
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 visible-xs">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
+					</div>
+					<div class="col-xs-6 col-sm-12">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
+					</div>
+				</div>
+				<div class="row">
+					<div id="info">
+						<p>
+							Informação Nutricional: <br>
+							<em>Teor Calórico: 80 kcal/200 m</em>
+
+						</p>
+						<p>
+							Ingredientes: <br>
+							<em>Água gaseificada, Açúcar, Suco de laranja: 10%</em>
+						</p>
+						<p>
+							Embalagens: <br>
+							<em>
+								Garrafa 2 litros <br>
+								Garrafa 605 ml <br>
+								Garrafa 600 ml
+							</em>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="foot "></div>
+</div>
+</div>
+
+<!-- GUARANÁ -->
+<div class="bg">
+	<div class="container box">
+		<div class="row row-tuba">
+			<div class="col-xs-12 col-sm-6 col-md-5">
+				<img class="img-responsive center-block hidden-xs tuba-principal" src="_/images/marcas-detalhado/cristalina/1.png" alt="" />
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-7">
+				<div class="row">
+					<div class="titulo">
+						<p>
+							CRISTALINA
+						</p>
+						<p>
+							GUARANÁ
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 visible-xs">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/m1.png" alt="" />
+					</div>
+					<div class="col-xs-6 col-sm-12">
+						<img class="img-responsive center-block vb" src="_/images/marcas-detalhado/cristalina/vb.png" alt="" />
+					</div>
+				</div>
+				<div class="row">
+					<div id="info">
+						<p>
+							Informação Nutricional: <br>
+							<em>Teor Calórico: 80 kcal/200 m</em>
+
+						</p>
+						<p>
+							Ingredientes: <br>
+							<em>Água gaseificada, Açúcar, Extrato natural de guaraná: 0,02%</em>
+						</p>
+						<p>
+							Embalagens: <br>
+							<em>
+								Garrafa 2 litros <br>
+								Garrafa 605 ml <br>
+								Garrafa 600 ml <br>
+								Lata 350 ml <br>
+							</em>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="foot "></div>
+</div>
+</div>
