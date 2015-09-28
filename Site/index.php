@@ -1,6 +1,9 @@
 <?php
 require_once 'atqweb/Classes/Mysql.php';
 $db = new Mysql();
+
+$baseUrl = "";
+// $baseUrl = "http://ataquepropaganda.com.br/malta"
 ?>
 <!DOCTYPE html>
 <html>

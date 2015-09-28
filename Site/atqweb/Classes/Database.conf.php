@@ -8,7 +8,7 @@ $databases = array(
             'port'=>3306,
             'dbname'=>'malta',
             'user'=>'root',
-            'password'=>'giberto'
+            'password'=>'gilberto'
 
 
     )
