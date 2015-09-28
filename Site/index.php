@@ -144,7 +144,7 @@ else {
 ?>
 <!-- /INTERNAS -->
 
-<footer style="background:#ffd32c">
+<footer style="background:#ffd32c; color: #e42517">
   <div class="container">
     <span style="float:left;padding-left:10px;">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados </span>
     <a href="http://www.ataquepropaganda.com.br/" title="Ataque Propaganda - &quot;Somos a agência de comunicação que mudará o seu conceito sobre propaganda, marketing, planejamento e RESULTADOS&quot;." target="_blank" style="float:right;padding-left:10px;"><img src="_/images/logo-atq.png" alt="image"></a>
