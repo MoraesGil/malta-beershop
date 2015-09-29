@@ -12,7 +12,7 @@ $databases = array(
 
 			'host'=>'localhost',
             'port'=>3306,
-            'dbname'=>'vilela',
+            'dbname'=>'malta',
             'user'=>'root',
             'password'=>'gilberto'
 
