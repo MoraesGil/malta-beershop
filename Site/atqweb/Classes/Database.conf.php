@@ -4,12 +4,17 @@ global $databases;
 $databases = array(
     'local' => array
     (
-            'host'=>'localhost',
+ /*           'host'=>'localhost',
             'port'=>3306,
-            'dbname'=>'malta',
+            'dbname'=>'damha1_damha1',
+            'user'=>'damha1_damha1',
+            'password'=>'Master@321'*/
+
+			'host'=>'localhost',
+            'port'=>3306,
+            'dbname'=>'vilela',
             'user'=>'root',
             'password'=>'gilberto'
-
 
     )
 );

@@ -61,7 +61,7 @@ foreach ( $files as $file )
         if ( $handle->processed )
         {
             $file_dst_name = $handle->file_dst_name;
-            $foto_data = date( 'Y-m-d h:i:s' );
+            $foto_data = date( 'Y-m-d 00:00:00' );
             $db->query( "insert into fotos (foto_album,foto_url,foto_data,foto_pos) values ($album_id,'$file_dst_name','$foto_data','999');" );
             //$file_dst_name .= "?v=" . time();
             $last_id = mysql_insert_id();

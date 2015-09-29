@@ -1,6 +1,6 @@
-<?php 
-					@$id = $_REQUEST['id'];						
-					$db->conecta();			
-					$noticias->excluirNoticias($id);	
-					$db->fechaConexao();
+<?php
+@$id = $_REQUEST['id'];
+$db->conecta();
+$Noticia->excluirNoticias($id);
+$db->fechaConexao();
 ?>

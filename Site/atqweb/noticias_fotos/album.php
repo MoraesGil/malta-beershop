@@ -11,7 +11,7 @@
 </style>
 <?php
 @header( 'Content-Type: text/html; charset=utf-8' );
-require_once 'Classes/mysql.php';
+require_once 'admlg/galeria/database/mysql.php';
 $db = new Mysql;
 $page = 0;
 $perpage = 16; //quantidade de fotos por página

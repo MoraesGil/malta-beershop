@@ -174,18 +174,18 @@ $db->conecta();
 				$pags = ceil($total_registros/$qnt);
 				$max_links = 3;
 				
-				echo ' <li><a href="AniversariantesCadastrados&pag=1" target="_self" title="Primeira">&laquo;</a></li>';
+				echo ' <li><a href="AniversariantesCadastrados&p=1" target="_self" title="Primeira">&laquo;</a></li>';
 				for($i = $pag-$max_links; $i <= $pag-1; $i++) {
 				 if($i <=0) { 
 				} else { 
-				echo ' <li ><a href="AniversariantesCadastrados&pag='.$i.'" target="_self">'.$i.'</a></li>';
+				echo ' <li ><a href="AniversariantesCadastrados&p='.$i.'" target="_self">'.$i.'</a></li>';
 				} } 
-				 echo '<li ><a href="AniversariantesCadastrados&pag='.$i.'" target="_self">'.$pag.'</a></li>'; 
+				 echo '<li ><a href="AniversariantesCadastrados&p='.$i.'" target="_self">'.$pag.'</a></li>'; 
 				 for($i = $pag+1; $i <= $pag+$max_links; $i++) { 
 				 if($i > $pags) { 
 				 } 
-				 else { echo '<li><a href="AniversariantesCadastrados&pag='.$i.'" target="_self">'.$i.'</a></li>'; } }
-				echo '<li><a href="AniversariantesCadastrados&pag='.$pags.'" target="_self" title="Última">&raquo;</a></li>	';
+				 else { echo '<li><a href="AniversariantesCadastrados&p='.$i.'" target="_self">'.$i.'</a></li>'; } }
+				echo '<li><a href="AniversariantesCadastrados&p='.$pags.'" target="_self" title="Última">&raquo;</a></li>	';
 				
 				
 				  

@@ -10,7 +10,7 @@ if ( !$sid->check() )
 {
     //@header( 'Location: login.php' );
 }
-$db->conecta();	
+$db->conecta();
 
 $file_dst_name = "";
 $not_id = $_GET['not_id'];
@@ -61,8 +61,14 @@ foreach ( $files as $file )
         if ( $handle->processed )
         {
             $file_dst_name = $handle->file_dst_name;
-            $foto_data = date( 'Y-m-d h:i:s' );
-            $db->query( "insert into noticias_fotos (not_id,nfto_url,nfto_data,nfto_pos) values ('$not_id','$file_dst_name','$foto_data','999');" );
+            $foto_data = date( 'Y-m-d 00:00:00' );
+
+            $db->query("select not_id from noticias_fotos where not_id = '$not_id'")->fetchAll();
+
+
+            $pos = $db->rows > 0 ? "1" : "0";
+
+            $db->query( "insert into noticias_fotos (not_id,nfto_url,nfto_data,nfto_pos) values ('$not_id','$file_dst_name','$foto_data','$pos');" );
             //$file_dst_name .= "?v=" . time();
             $last_id = mysql_insert_id();
             echo json_encode( array( 'url' => "$file_dst_name", 'id' => $last_id, 'time' => time() ) );

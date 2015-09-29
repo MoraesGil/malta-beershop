@@ -210,7 +210,7 @@ if ( isset( $_GET['delete'] ) && !empty( $_GET['delete'] ) )
                                                 ?>
                                                 <ul class="mini-menu with-children-tip">
                                                     <li><a href="javascript:void(0)" title="Atualizar" id="<?php echo $f->foto_id; ?>" album="<?php echo $album_id; ?>" class="refresh"><img src="galeria/admin/tpl/images/icons/refresh.png" width="16" height="16"></a></li>
-                                                    <li><a href="javascript:void(0)" title="Definir Capa" id="<?php echo $f->foto_id; ?>" album="<?php $album_id ?>" class="cover"><img src="galeria/admin/tpl/images/icons/photo.png" width="16" height="16"></a></li>
+                                                    <li><a href="javascript:void(0)" title="Definir Capa" id="<?php echo $f->foto_id; ?>" album="<?php echo $album_id ?>" class="cover"><img src="galeria/admin/tpl/images/icons/photo.png" width="16" height="16"></a></li>
                                                     <li><a href="javascript:void(0)" title="Remover" id="<?php echo $f->foto_id; ?>" class="delete"><img src="galeria/admin/tpl/images/cross-circle.png" width="16" height="16"></a></li>
                                                 </ul>   
                                                 <img class="pic with-tip tip-bottom" title="mover posição" src="galeria/thumb2.php?img=fotos/<?php echo $f->foto_url; ?>" width="174" height="136" />

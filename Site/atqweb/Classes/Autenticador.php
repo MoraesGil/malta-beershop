@@ -1,23 +1,23 @@
 <?php
-
+include 'Mysql.php';
 abstract class Autenticador {
 
 
-    private static $instancia = null;
+  private static $instancia = null;
 
-    private function __construct() {}
+  private function __construct() {}
 
     /**
-     *
-     * @return Autenticador
-     */
+    *
+    * @return Autenticador
+    */
     public static function instanciar() {
 
-        if (self::$instancia == NULL) {
-            self::$instancia = new AutenticadorEmBanco();
-        }
+      if (self::$instancia == NULL) {
+        self::$instancia = new AutenticadorEmBanco();
+      }
 
-        return self::$instancia;
+      return self::$instancia;
 
     }
 
@@ -26,66 +26,62 @@ abstract class Autenticador {
     public abstract function pegar_usuario();
     public abstract function expulsar();
 
-}
+  }
 
 
-class AutenticadorEmBanco extends Autenticador {
+  class AutenticadorEmBanco extends Autenticador {
 
     public function esta_logado() {
-        $sess = Sessao::instanciar();
-        return $sess->existe('usuario');
+      $sess = Sessao::instanciar();
+      return $sess->existe('usuario');
     }
 
     public function expulsar() {
-        //header('location: Controle.php?acao=sair');
-		header('location: index.php');
+      //header('location: Controle.php?acao=sair');
+      header('location: index.php');
 
     }
 
     public function logar($email, $senha) {
 
-		$pdo = new PDO('mysql:dbname=espacopatas;host=187.45.210.75', 'espacopatas', 'EspPat2014');
-		//$pdo = new PDO('mysql:dbname=bdespacopatas;host=localhost', 'root', 'vertrigo');
-		$sess = Sessao::instanciar();
+      $db = new Mysql();
+      $db->conecta();
+      $sess = Sessao::instanciar();
+      $db->query("select *   from usuarios
+      where usuarios.email ='{$email}' and
+      usuarios.senha = '{$senha}'")->fetchAll();
+      if ( $db->rows >= 1 )
+      { // linhas
+        foreach ( $db->data as $Loop )
+        {// loop conteudo
+          $ln = ( object ) $Loop;
 
-        $sql = "select *
-               from usuarios
-               where usuarios.email ='{$email}' and
-                   usuarios.senha = '{$senha}'";
-
-        $stm = $pdo->query($sql);
-
-        if ($stm->rowCount() > 0) {
-
-            $dados = $stm->fetch(PDO::FETCH_ASSOC);
-
-            $usuario = new Usuario();
-            $usuario->setEmail($dados['email']);
-            $usuario->setId($dados['id']);
-            $usuario->setNome($dados['nome']);
-            $usuario->setSenha($dados['senha']);
-			$usuario->setTipo($dados['tipo']);
-
-            $sess->set('usuario', $usuario);
-            return true;
-
+          $usuario = new Usuario();
+          $usuario->setEmail($ln->email);
+          $usuario->setId($ln->id);
+          $usuario->setNome($ln->nome);
+          $usuario->setSenha($ln->senha);
+          $usuario->setTipo($ln->tipo);
+          $sess->set('usuario', $usuario);
+          return true;
         }
-        else {
-            return false;
-        }
+      } else {
+        return false;
+      }
+      $db->fechaConexao();
 
     }
 
     public function pegar_usuario() {
-        $sess = Sessao::instanciar();
+      $sess = Sessao::instanciar();
 
-        if ($this->esta_logado()) {
-            $usuario = $sess->get('usuario');
-            return $usuario;
-        }
-        else {
-            return false;
-        }
+      if ($this->esta_logado()) {
+        $usuario = $sess->get('usuario');
+        return $usuario;
+      }
+      else {
+        return false;
+      }
     }
 
-}
+  }

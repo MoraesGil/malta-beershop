@@ -39,7 +39,7 @@ class Mysql
 					mysql_query('SET character_set_results=utf8');
             if ( !$this->con )
             {
-                throw new Exception( "Falha na conexão MySql com o banco [$this->dbname] em database.conf.php" );
+                throw new Exception( "Falha na conexï¿½o MySql com o banco [$this->dbname] em database.conf.php" );
             }
             else
             {
@@ -60,14 +60,14 @@ class Mysql
         {
             if ( $query == '' )
             {
-                throw new Exception( 'mysql query: A query deve ser informada como parâmetro do método.' );
+                throw new Exception( 'mysql query: A query deve ser informada como parï¿½metro do mï¿½todo.' );
             }
             else
             {
                 $this->query = $query;
-					
+
                 $this->result = mysql_query( $this->query );
-			
+
             }
         }
         catch ( Exception $e )
@@ -102,9 +102,9 @@ class Mysql
     {
         return "LIMIT " . ( int ) $limit . "," . ( int ) $offset;
     }
-	
+
 	public function fechaConexao () {
-	 return mysql_close();	
+	 return mysql_close();
 	}
 
 }

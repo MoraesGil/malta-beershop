@@ -24,7 +24,7 @@
         <input type="file" class="form-control" required name="parc_imagem" >
         <input type="hidden" name="usuario_id" value="<?php echo $usuario->getId(); ?>"><br />
 
-        
+          
   
         <input class="" id="cadastrar" name="cadastrar" value="Cadastrar" type="submit">
       </form>

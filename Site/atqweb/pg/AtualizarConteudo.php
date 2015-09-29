@@ -28,10 +28,7 @@
         <h3 class="form-signin-heading">Preencha os dados para a atualizar o contéudo.</h3><br>
 		Título:
         <input type="text" class="form-control"  autofocus name="cont_titulo" value="<?php echo $linha['cont_titulo']; ?>">
-       	 Chamada:
-        <textarea  class="form-control" name="cont_chamada" style="height:200px; width:100%;">
-        <?php echo $linha['cont_chamada']; ?>
-        </textarea>
+      
         Conteúdo:
         <textarea  class="form-control" name="cont_conteudo" style="height:400px; width:100%;">
         <?php echo $linha['cont_conteudo']; ?>
