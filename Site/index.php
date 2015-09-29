@@ -44,6 +44,10 @@ if (isset($_GET['pg']))
     break;
     case "home":  echo 'class="blog_classic"';
     break;
+    case "noticias-mes":  echo 'class="blog_classic"';
+    break;
+    case "noticias":  echo 'class="blog_classic"';
+    break;
     case "marcas":  echo 'class="blog_classic"';
     break;
     case "empresa":  echo 'class="blog_classic"';
