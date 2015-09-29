@@ -104,7 +104,10 @@ a:hover, a:focus {
             <div class="titulo">
             <em>
               <p>
-                TROPICOLA
+                NATPOWER
+              </p>
+              <p>
+                ENERGY DRINK
               </p>
             </em>
           </div>
