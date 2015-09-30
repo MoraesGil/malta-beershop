@@ -3,7 +3,7 @@
   padding-top: 80px;
   padding-left:3%;
   padding-right: 3%;
-  background:url(_/images/marcas-detalhado/NatPower/bg.jpg) #688082 no-repeat;
+  background:url(_/images/marcas-detalhado/natpower/bg.jpg) #688082 no-repeat;
   width:100%;
   background-size: cover;
 
@@ -117,7 +117,7 @@ a:hover, a:focus {
       <!-- miniaturas -->
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="_/images/marcas-detalhado/NatPower/1.png" alt="" />
+          <img class="img-responsive center-block" src="_/images/marcas-detalhado/natpower/1.png" alt="" />
           <div class="infomini">
             <p>
               Garrafa
@@ -129,7 +129,7 @@ a:hover, a:focus {
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="_/images/marcas-detalhado/NatPower/2.png" alt="" />
+          <img class="img-responsive center-block" src="_/images/marcas-detalhado/natpower/2.png" alt="" />
           <div class="infomini">
             <p>
               Garrafa
@@ -141,7 +141,7 @@ a:hover, a:focus {
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="_/images/marcas-detalhado/NatPower/3.png" alt="" />
+          <img class="img-responsive center-block" src="_/images/marcas-detalhado/natpower/3.png" alt="" />
           <div class="infomini">
             <p>
               Garrafa
@@ -153,7 +153,7 @@ a:hover, a:focus {
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="_/images/marcas-detalhado/NatPower/4.png" alt="" />
+          <img class="img-responsive center-block" src="_/images/marcas-detalhado/natpower/4.png" alt="" />
           <div class="infomini">
             <p>
               Lata
@@ -194,7 +194,7 @@ a:hover, a:focus {
           </div>
         </div>
         <div class="col-md-6 hidden-xs hidden-sm ">
-          <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/NatPower/principal.png" alt="" />
+          <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/natpower/principal.png" alt="" />
         </div>
       </div>
 

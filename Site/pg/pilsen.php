@@ -4,7 +4,7 @@
   padding-top:80px;
   padding-left:3%;
   padding-right: 3%;
-  background:url(_/images/marcas-detalhado/Pilsen/bg.jpg) #652600 no-repeat;
+  background:url(/_/images/marcas-detalhado/pilsen/bg.jpg) #652600 no-repeat;
   width:100%;
   background-size: cover;
 }
@@ -71,7 +71,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/Pilsen/1.png" alt="" />
+            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/1.png" alt="" />
             <div class="infomini">
               <p>
                 Garrafa
@@ -83,7 +83,7 @@
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/Pilsen/2.png" alt="" />
+            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/2.png" alt="" />
             <div class="infomini">
               <p>
                 Lata
@@ -95,7 +95,7 @@
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/Pilsen/3.png" alt="" />
+            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/3.png" alt="" />
             <div class="infomini">
               <p>
                 Lata
@@ -107,7 +107,7 @@
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/Pilsen/4.png" alt="" />
+            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/4.png" alt="" />
             <div class="infomini">
               <p>
                 Lata
@@ -120,15 +120,15 @@
         </div>
 
         <div class="row hidden-xs hidden-sm ">
-          <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/Pilsen/seta.png" alt="" />
+          <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/pilsen/seta.png" alt="" />
         </div>
         <div class="row">
-          <img class="img-responsive center-block" src="_/images/marcas-detalhado/Pilsen/info.png" alt="" />
+          <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/info.png" alt="" />
         </div>
       </div>
 
       <div class="col-md-6 hidden-xs hidden-sm col-lg-6">
-        <img id="principal" class="img-responsive center-block" src="_/images/marcas-detalhado/Pilsen/principal.png" alt="" />
+        <img id="principal" class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/principal.png" alt="" />
       </div>
     </div>
   </div>

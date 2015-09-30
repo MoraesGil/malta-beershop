@@ -127,9 +127,9 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-sm-12">
-                <img class="img-responsive center-block hidden-xs hidden-sm" style="margin-bottom:2px" src="_/images/marcas-detalhado/CHOPP/principal.png" alt="" />
+                <img class="img-responsive center-block hidden-xs hidden-sm" style="margin-bottom:2px" src="_/images/marcas-detalhado/chopp/principal.png" alt="" />
 
-                <img class="img-responsive center-block hidden-xs hidden-md hidden-lg" style="margin-bottom:2px" src="_/images/marcas-detalhado/CHOPP/info2.png" alt="" />
+                <img class="img-responsive center-block hidden-xs hidden-md hidden-lg" style="margin-bottom:2px" src="_/images/marcas-detalhado/chopp/info2.png" alt="" />
 
                 <div id="info" class="hidden-sm hidden-md hidden-lg">
                   <p>
@@ -153,7 +153,7 @@
               </div>
             </div>
             <div class="col-md-6 hidden-xs hidden-sm ">
-              <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/CHOPP/info.png" alt="" />
+              <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/chopp/info.png" alt="" />
 
             </div>
           </div>
