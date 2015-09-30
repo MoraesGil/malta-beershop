@@ -11,7 +11,7 @@ isset($pag) ? $pag = mysql_escape_string($pag) : $pag = 1;
 
 $qnt_listar = 3;//Listar 15 registros por pagina
 $inicio = ($pag*$qnt_listar) - $qnt_listar;
-
+$dados;
 // LOAD DATA
 $db->conecta();
 
@@ -22,14 +22,15 @@ FROM noticias where not_mes = n.not_mes) as qtd from noticias n  group by n.not_
 if($n == 0) //se nao for exibir detalhes de uma noticia
 {//carrega noticias no periodo informado
 	$query= "select distinct COUNT(not_id) as qtd_reg from noticias where NOT_MES =".$m;
-	$qtd_reg = $db->query($query)->fetchAll()[0]["qtd_reg"]+0;
+	$temp =$db->query($query)->fetchAll();
+	$qtd_reg = $temp[0]["qtd_reg"];
 
 	$query = "SELECT n.not_id, n.not_date, n.not_titulo, n.not_dia, n.not_mes, n.not_ano, n.not_descricao,
 	nf.nfto_url
 	from noticias n
 	left join noticias_fotos nf on n.not_id = nf.not_id
 	where n.not_view='s' and n.not_mes =".$m."
-	and  IFNULL(NF.NFTO_pos,0)=0
+	and  IFNULL(nf.nfto_pos,0)=0
 	ORDER BY n.not_date, n.not_time DESC LIMIT ".$inicio.",".$qnt_listar.";";
 
 	$db->query($query)->fetchAll();//Dados a serem exibidos
@@ -37,13 +38,14 @@ if($n == 0) //se nao for exibir detalhes de uma noticia
 else
 {//Carrega noticia detalhada
 	$query= "select distinct COUNT(not_id) as qtd_reg from noticias where not_id =".$n;
-	$qtd_reg = $db->query($query)->fetchAll()[0]["qtd_reg"]+0;
+	$temp =$db->query($query)->fetchAll();
+	$qtd_reg = $temp[0]["qtd_reg"];
 
 	$query = "SELECT n.not_id, n.not_date, n.not_titulo, n.not_dia, n.not_mes, n.not_ano, n.not_conteudo,
 	nf.nfto_url
 	from noticias n
 	left join noticias_fotos nf on n.not_id = nf.not_id
-	where n.not_view='s' and IFNULL(NF.NFTO_pos,0)=0 and n.not_id = ".$n;
+	where n.not_view='s' and IFNULL(nf.nfto_pos,0)=0 and n.not_id = ".$n;
 
 	$db->query($query)->fetchAll();//Dados a serem exibidos
 
@@ -51,7 +53,7 @@ else
 $pags = $qtd_reg >0 ? ceil($qtd_reg/$qnt_listar) : 0;//total de paginas arrendodando
 
 $conteudo = $qtd_reg  > 0 && $pags > 0 && $pag <=$pags?	"" :"<p class='moderar' align='center'>Não há noticias no periodo selecionado</p>";
-
+$dados= $db->data;
 $db->fechaConexao();
 
 ?>
@@ -88,7 +90,7 @@ $db->fechaConexao();
 			<div class="row header-group">
 				<div class="col-sm-8 col-sm-12">
 					<h1>NOTÍCIAS</h1>
-					<p>MALTA CERVEJARIA<?php echo "";?></p>
+					<p>MALTA CERVEJARIA </p>
 				</div>
 				<div class="col-xs-4 hidden-xs">
 					<ol class="breadcrumb navegacao">
@@ -103,6 +105,7 @@ $db->fechaConexao();
 	<div class="container blog_classic_posts">
 		<div class="row">
 			<div class="col-sm-8">
+
 				<?php
 				if($n>0){
 					echo '<h2 class="pull-left">'.$db->data[0]["not_titulo"].'</h2>';
@@ -115,7 +118,7 @@ $db->fechaConexao();
 				if($conteudo=="" )//tem registros entao..
 				{
 					// linhas pesquisa
-					foreach ( $db->data as $lista )
+					foreach ( $dados as $lista )
 					{// loop conteudo pesquisa
 
 						$obj = ( object ) $lista;//converte o loop pra object e joga na ln
@@ -134,7 +137,7 @@ $db->fechaConexao();
 
 										}
 										else {
-											echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p>';
+											echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p><br><br>';
 											echo '<p><a href="noticias&n='.$obj->not_id.'"><h2>'.$obj->not_titulo.'</h2></a></p>';
 
 											echo '<p>'.$obj->not_descricao.'</p>';
