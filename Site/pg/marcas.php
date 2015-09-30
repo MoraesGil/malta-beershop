@@ -118,7 +118,7 @@ foreach ($beers as $key => $value) {
 			">
 
 			<h2><?php echo $beers[$key][0]; ?></h2>
-			<a href="/<?php echo $beers[$key][1];?>" class="see-more" style="color: <?php echo $beers[$key][2]; ?>">Veja Mais</a>
+			<a href="<?php echo $baseUrl."/".$beers[$key][1];?>" class="see-more" style="color: <?php echo $beers[$key][2]; ?>">Veja Mais</a>
 			<br>
 			<br>
 			</div>
