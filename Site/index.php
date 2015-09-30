@@ -3,8 +3,8 @@ require_once 'atqweb/Classes/Mysql.php';
 require_once 'atqweb/Classes/Funcoes.php';
 $db = new Mysql();
 $funcoes = new Funcoes();
-$baseUrl = "";
-// $baseUrl = "http://ataquepropaganda.com.br/malta"
+// $baseUrl = "";
+$baseUrl = "http://ataquepropaganda.com.br/malta"
 ?>
 <!DOCTYPE html>
 <html>
