@@ -5,18 +5,18 @@ $databases = array(
   'local' => array
   (
   //Local
-  // 'host'=>'localhost',
-  // 'port'=>3306,
-  // 'dbname'=>'malta',
-  // 'user'=>'root',
-  // 'password'=>'gilberto'
-
-  //ataquepropaganda.com.br
   'host'=>'localhost',
   'port'=>3306,
-  'dbname'=>'ataqu938_malta',
-  'user'=>'ataqu938_gilbert',
+  'dbname'=>'malta',
+  'user'=>'root',
   'password'=>'gilberto'
+
+  //ataquepropaganda.com.br
+  // 'host'=>'localhost',
+  // 'port'=>3306,
+  // 'dbname'=>'ataqu938_malta',
+  // 'user'=>'ataqu938_gilbert',
+  // 'password'=>'gilberto'
 
 )
 );
