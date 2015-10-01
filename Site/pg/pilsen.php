@@ -46,6 +46,17 @@
 	}
 }
 
+@media (min-width: 1200px) {
+	.img-responsive{
+		width: 74%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.img-responsive{
+		width: 74%;
+	}
+}
 
 
 </style>
@@ -70,7 +81,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/1.png" alt="" />
             <div class="infomini">
               <p>
@@ -82,7 +93,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/2.png" alt="" />
             <div class="infomini">
               <p>
@@ -94,7 +105,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/3.png" alt="" />
             <div class="infomini">
               <p>
@@ -106,7 +117,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
             <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen/4.png" alt="" />
             <div class="infomini">
               <p>
