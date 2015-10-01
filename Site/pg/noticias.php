@@ -17,7 +17,7 @@ $db->conecta();
 
 //Carrega qtd de noticias por mes....
 $qtd_mes = $db->query("select n.not_mes as mes,  (SELECT COUNT(not_mes)
-FROM noticias where not_mes = n.not_mes and n.not_view='s') as qtd from noticias n  group by n.not_mes;")->fetchAll();
+FROM noticias where not_mes = n.not_mes and not_view='s') as qtd from noticias n where n.not_view='s'  group by n.not_mes;")->fetchAll();
 
 if($n == 0) //se nao for exibir detalhes de uma noticia
 {//carrega noticias no periodo informado
