@@ -20,7 +20,7 @@
 
 
 #info{
-	font-size: 2em;
+	font-size: 1.7em;
 	font-family: "Helvetica";
 	color: rgb(255, 29, 29);
 	font-weight: bold;
@@ -77,10 +77,18 @@
 	padding-top: 60px;
 }
 
-
-.tuba-principal{
-	height: 100%;
+.img-responsive{
+	width: 67%;
 }
+
+
+@media (min-width: 1200px) {
+	.img-responsive{
+		width: 50%;
+	}
+}
+
+
 </style>
 
 
