@@ -45,6 +45,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+	.img-responsive{
+		width: 74%;
+	}
+}
+
 
 
 
