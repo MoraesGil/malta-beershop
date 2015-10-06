@@ -1219,6 +1219,7 @@ a.search_btn :hover {
   line-height: 1.3em;
   font-size: .9em;
   color: #000;
+  width: 98%;
 }
 .cn_list {
   float: left;
@@ -1239,8 +1240,8 @@ a.search_btn :hover {
   top: 350px;
   left: 5px;
   width: 100%;
-  position: absolute;
   height: auto;
+  position: absolute;
 }
 
 
@@ -1504,7 +1505,6 @@ a.search_btn :hover {
   background: url(../images/bg-slider-twitter.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
-  margin-bottom: 80px;
   -webkit-transform-style: preserve-3d;
 }
 .twitter-section .col {

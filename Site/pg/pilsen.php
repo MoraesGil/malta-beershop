@@ -4,7 +4,7 @@
   padding-top:80px;
   padding-left:3%;
   padding-right: 3%;
-  background:url(/_/images/marcas-detalhado/pilsen/bg.jpg) #652600 no-repeat;
+  background:url(_/images/marcas-detalhado/pilsen/bg.jpg) #652600 no-repeat;
   width:100%;
   background-size: cover;
 }
