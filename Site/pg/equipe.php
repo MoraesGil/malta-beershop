@@ -1,4 +1,5 @@
 
+
 <section class="subpage-banner blog-classic-banner">
   <div class="container">
     <div class="row header-group">
@@ -21,10 +22,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="row post_row">
-        <div class="col-sm-2">
-          <img src="_/images/noticias/reficon2.jpg" class="author-avatar img-circle img-responsive" alt="Avatar">
-        </div>
-        <div class="col-sm-10 blog-post-teaser">
+        <div class="col-md-12 blog-post-teaser">
           <h2 class="blog-post-title">
             <a href="ver-noticia">Equipe</a>
           </h2>

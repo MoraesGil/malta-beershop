@@ -1,4 +1,4 @@
-<div class="mainbanner">
+<div class="mainbanner hidden-xs">
 	<div id="sequence">
 		<span class="sequence-prev"><i class="icon-left-open-big"></i></span>
 		<span class="sequence-next"><i class="icon-right-open-big"></i></span>
@@ -13,39 +13,42 @@
 <div class="grid-icon-container scroll-target">
 	<section class="container grid-icon">
 		<div class="row">
-			<a href="marcas" title="Confira nossas marcas">
-				<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
-					<span><i class="icon-glass"></i></span>
-					<h4>MARCAS</h4>
-					<p></p>
-				</div>
-			</a>
-			<a href="#local">
-				<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
-					<span><i class="icon-location"></i></span>
-					<h4>ONDE ESTAMOS</h4>
-					<p></p>
-				</div>
-			</a>
+			<div class="col-xs-12 col-sm-12">
+				<a href="marcas" title="Confira nossas marcas">
+					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
+						<span><i class="icon-glass"></i></span>
+						<h4>MARCAS</h4>
+						<p></p>
+					</div>
+				</a>
+				<a href="#local">
+					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+						<span><i class="icon-location"></i></span>
+						<h4>ONDE ESTAMOS</h4>
+						<p></p>
+					</div>
+				</a>
 
-			<a href="equipe">
-				<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
-					<span><i class="icon-users"></i></span>
-					<h4>EQUIPE</h4>
-					<p></p>
-				</div>
-			</a>
+				<a href="equipe">
+					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+						<span><i class="icon-users"></i></span>
+						<h4>EQUIPE</h4>
+						<p></p>
+					</div>
+				</a>
 
 
-			<a href="distribuicao">
-				<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
-					<span><i class="icon-truck"></i></span>
-					<h4>DISTRIBUIÇÃO</h4>
-					<p></p>
-				</div>
-			</a>
+				<a href="distribuicao">
+					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
+						<span><i class="icon-truck"></i></span>
+						<h4>DISTRIBUIÇÃO</h4>
+						<p></p>
+					</div>
+				</a>
 
+			</div>
 		</div>
+
 	</section>
 
 	<svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -183,7 +186,7 @@
 							</a>
 						</h4>
 					</div>
-					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body">
 							Em 1956, o Sr. Caetano Schincariol inicia suas atividades na fabricação de refrigerantes em Assis, interior de São Paulo.
 							Mais tarde, começa a produzir cerveja, na época artesanalmente, unindo seus esforços e dedicação.<br /><br />
@@ -230,7 +233,7 @@
 				</div>
 			</div>
 		</div>
-
+		<br><br>
 	</div>
 </section>
 

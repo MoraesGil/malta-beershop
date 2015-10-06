@@ -40,37 +40,24 @@ if (isset($_GET['pg']))
 {
   $pagina = $_GET['pg'];
 
-  switch ($pagina) {
-    case "ver-noticia":  echo 'class="portfolio-page"';
-    break;
-    case "home":  echo 'class="blog_classic"';
-    break;
-    case "noticias-mes":  echo 'class="blog_classic"';
-    break;
-    case "noticias":  echo 'class="blog_classic"';
-    break;
-    case "marcas":  echo 'class="blog_classic"';
-    break;
-    case "empresa":  echo 'class="blog_classic"';
-    break;
-    case "equipe":  echo 'class="blog_classic"';
-    break;
-    case "distribuicao":  echo 'class="blog_classic"';
-    break;
-    case "contato": echo 'class="blog"';
-    break;
-    default: echo 'class="page-404"';
-    break;
+  $paginas = array("home","marcas", "noticias", "empresa", "equipe","distribuicao","contato");
+
+  if (in_array($pagina, $paginas)) {
+    echo 'class="blog"';
   }
-
+  else {
+    echo 'class="page-404"';
+  }
 }else {
-  echo 'class="blog_classic"';
+  echo 'class="blog"';
 }
-
-
-
 ?>
 >
+
+<div style="	min-height:100%;
+position:relative;">
+
+
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="row">
@@ -116,31 +103,46 @@ if (isset($_GET['pg']))
 </nav><!-- Main Navigation -->
 
 <!-- INTERNAS -->
-<?php
-if (isset($_GET['pg']))
-{
-  $pagina = $_GET['pg'];
-  if(file_exists("pg/$pagina.php")) {
-    include_once("pg/$pagina.php");
+<div class="" style="padding-bottom:60px">
+  <?php
+  if (isset($_GET['pg']))
+  {
+    $pagina = $_GET['pg'];
+    if(file_exists("pg/$pagina.php")) {
+      include_once("pg/$pagina.php");
+    }
+    else{
+      include_once("pg/404.php");
+    }
   }
-  else{
-    include_once("pg/404.php");
+  else {
+    include_once("pg/home.php");
   }
-}
-else {
-  include_once("pg/home.php");
-}
-?>
+  ?>
+</div>
 <!-- /INTERNAS -->
 
-<footer style="background:#ffd32c; color: #e42517">
-  <div class="container">
-    <span style="float:left;padding-left:10px;">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados </span>
-    <a href="http://www.ataquepropaganda.com.br/" title="Ataque Propaganda - &quot;Somos a agência de comunicação que mudará o seu conceito sobre propaganda, marketing, planejamento e RESULTADOS&quot;." target="_blank" style="float:right;padding-left:10px;"><img src="_/images/logo-atq.png" alt="image"></a>
+<style media="screen">
+  @media (max-width: 600px){
+    #ft{font-size:0.73em}
+  }
+</style>
+<footer id="ft" style="background:#ffd32c; color: #e42517; width:100%;
+height:60px;
+position:absolute;
+bottom:0;
+left:0;
+
+">
+<div class="container" style="padding-top: 14px;">
+  <span style="pull-left">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados
+  </span>
+  <a class="pull-right" href="http://www.ataquepropaganda.com.br/" title="Ataque Propaganda - &quot;Somos a agência de comunicação que mudará o seu conceito sobre propaganda, marketing, planejamento e RESULTADOS&quot;." target="_blank" >
+    <img src="_/images/logo-atq.png" alt="image"></a>
   </div>
 </footer>
+</div>
 
-<div class="md-overlay"></div>
 <div class="jquery-media-detect"></div>	<script type="text/javascript" src="_/js/jrating.jquery.js"></script>
 <script type="text/javascript">
 
