@@ -15,14 +15,14 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12">
 				<a href="marcas" title="Confira nossas marcas">
-					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
+					<div class="col-xs-6 col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
 						<span><i class="icon-glass"></i></span>
 						<h4>MARCAS</h4>
 						<p></p>
 					</div>
 				</a>
 				<a href="#local">
-					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+					<div class="col-xs-6 col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
 						<span><i class="icon-location"></i></span>
 						<h4>ONDE ESTAMOS</h4>
 						<p></p>
@@ -30,7 +30,7 @@
 				</a>
 
 				<a href="equipe">
-					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+					<div class="col-xs-6 col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
 						<span><i class="icon-users"></i></span>
 						<h4>EQUIPE</h4>
 						<p></p>
@@ -39,7 +39,7 @@
 
 
 				<a href="distribuicao">
-					<div class="col col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
+					<div class="col-xs-6 col-sm-6 col-md-3" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
 						<span><i class="icon-truck"></i></span>
 						<h4>DISTRIBUIÇÃO</h4>
 						<p></p>

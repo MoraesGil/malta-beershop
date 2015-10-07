@@ -40,7 +40,8 @@ if (isset($_GET['pg']))
 {
   $pagina = $_GET['pg'];
 
-  $paginas = array("home","marcas", "noticias", "empresa", "equipe","distribuicao","contato");
+  $paginas = array("home","marcas", "noticias", "empresa", "equipe","distribuicao","contato",
+  "club-soda-cristalina");
 
   if (in_array($pagina, $paginas)) {
     echo 'class="blog"';
@@ -103,7 +104,7 @@ position:relative;">
 </nav><!-- Main Navigation -->
 
 <!-- INTERNAS -->
-<div class="" style="padding-bottom:60px">
+<div style="padding-bottom:60px;">
   <?php
   if (isset($_GET['pg']))
   {
