@@ -26,6 +26,7 @@ $baseUrl = "";
   <link href="_/css/subpage_banners.css" rel="stylesheet" media="screen">
   <link href="_/css/jrating.jquery.css" rel="stylesheet" media="screen">
   <link href="_/css/flexisel-carrosel.css" rel="stylesheet" type="text/css" />
+  <link href="_/css/animations.min.css" rel="stylesheet" media="screen">
 
   <!--[if IE 9]><link rel="stylesheet" type="text/css" href="_/css/ie9.css"><![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -75,7 +76,7 @@ position:relative;">
         </div>
         <div class="collapse navbar-collapse" id="mynavbar">
           <div class="left-cell">
-            <ul class="nav navbar-nav" style="width: 800px !important;">
+            <ul class="nav navbar-nav"  >
               <li <?php if (isset($_GET['pg'])) { $pagina = $_GET['pg']; if($pagina == "home") { echo 'class="active"'; } } ?>>
                 <a href="home">Home</a>
               </li>
@@ -104,7 +105,7 @@ position:relative;">
 </nav><!-- Main Navigation -->
 
 <!-- INTERNAS -->
-<div style="padding-bottom:60px;">
+<div id="content">
   <?php
   if (isset($_GET['pg']))
   {
@@ -123,25 +124,15 @@ position:relative;">
 </div>
 <!-- /INTERNAS -->
 
-<style media="screen">
-  @media (max-width: 600px){
-    #ft{font-size:0.73em}
-  }
-</style>
-<footer id="ft" style="background:#ffd32c; color: #e42517; width:100%;
-height:60px;
-position:absolute;
-bottom:0;
-left:0;
 
-">
-<div class="container" style="padding-top: 14px;">
-  <span style="pull-left">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados
-  </span>
-  <a class="pull-right" href="http://www.ataquepropaganda.com.br/" title="Ataque Propaganda - &quot;Somos a agência de comunicação que mudará o seu conceito sobre propaganda, marketing, planejamento e RESULTADOS&quot;." target="_blank" >
-    <img src="_/images/logo-atq.png" alt="image"></a>
-  </div>
-</footer>
+<footer   >
+  <div class="container" style="padding-top: 14px;">
+    <span style="pull-left">© <?php echo date("Y"); ?> Cervejaria Malta • Todos os direitos reservados
+    </span>
+    <a class="pull-right" href="http://www.ataquepropaganda.com.br/" title="Ataque Propaganda - &quot;Somos a agência de comunicação que mudará o seu conceito sobre propaganda, marketing, planejamento e RESULTADOS&quot;." target="_blank" >
+      <img src="_/images/logo-atq.png" alt="image"></a>
+    </div>
+  </footer>
 </div>
 
 <div class="jquery-media-detect"></div>	<script type="text/javascript" src="_/js/jrating.jquery.js"></script>
@@ -175,6 +166,8 @@ $(window).load(function() {
 <script type="text/javascript" src="_/js/jquery.flexisel.js"></script>
 <script type="text/javascript" src="_/js/myscript.js"></script>
 <script type="text/javascript" src="_/js/modal_effects.js"></script>
+<script type="text/javascript" src="_/js/appear.min.js"></script>
+<script type="text/javascript" src="_/js/animations.min.js"></script>
 
 
 </body>

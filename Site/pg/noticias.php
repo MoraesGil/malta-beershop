@@ -59,174 +59,137 @@ $db->fechaConexao();
 ?>
 
 
-<style media="screen">
-.see-more {
-	/* color: #000000; */
-	text-transform: uppercase;
-	font-weight: 300;
-	padding: 5px 30px;
-	-webkit-box-shadow: 0 4px 0 #bdc3c7;
-	box-shadow: 0 4px 0 #bdc3c7;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	background-clip: padding-box;
-	background-color: #e3e9eb;
-	position: relative;
-	top: 0;
-}
-.see-more:hover{
-	background-color: #ffd32c;
-	text-decoration: none;
-	color: #ffffff;
-	-webkit-box-shadow: 0 4px 0 #e2bf3a;
-	box-shadow: 0 4px 0 #e2bf3a;
-}
 
-</style>
-
-<div class="blog_classic sidebar-right">
-	<section class="subpage-banner blog-classic-banner">
-		<div class="container">
-			<div class="row header-group">
-				<div class="col-sm-8 col-sm-12">
-					<h1>NOTÍCIAS</h1>
-					<p>MALTA CERVEJARIA </p>
-				</div>
-				<div class="col-xs-4 hidden-xs">
-					<ol class="breadcrumb navegacao">
-						<li>Você está em: </li>
-						<li><a href="home">Home</a></li>
-						<li class="active">Notícias</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="container blog_classic_posts">
-		<div class="row">
-			<div class="col-sm-8">
-
-				<?php
-				if($n>0){
-					echo '<h2 class="pull-left">'.$db->data[0]["not_titulo"].'</h2>';
-				}
-				else{
-					echo '<h1 class="text-center">NOTICIAS DE '.$funcoes->MesPorNumero($m).'</h2>';
-				}
-
-				echo $conteudo;
-				if($conteudo=="" )//tem registros entao..
-				{
-					// linhas pesquisa
-					foreach ( $dados as $lista )
-					{// loop conteudo pesquisa
-
-						$obj = ( object ) $lista;//converte o loop pra object e joga na ln
-						?>
-						<div class="row post_row">
-							<div class="col-sm-12 blog-post-teaser">
-								<div class="row">
-
-									<div class="container">
-										<img src="atqweb/noticias_fotos/fotos/<?php echo $obj->nfto_url !="" ? $obj->nfto_url	: "default.jpg"; ?>"  alt="" class="blog-post-teaser-image img-responsive">
-
-										<?php
-										if($n>0){
-											echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p>';
-											echo '<p>'.$obj->not_conteudo.'</p>';
-
-										}
-										else {
-											echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p><br><br>';
-											echo '<p><a href="noticias&n='.$obj->not_id.'"><h2>'.$obj->not_titulo.'</h2></a></p>';
-
-											echo '<p>'.$obj->not_descricao.'</p>';
-											echo '<p><a class="see-more pull-right" href="noticias&n='.$obj->not_id.'">Veja Mais</a></p>';
-										}
+<header class="text-center">
+	<h1 >Noticias</h1>
+	<p class="subtitle">malta cervejaria</p>
+</header>
 
 
+<div class="container ">
+	<div class="row">
+		<div class="col-sm-8">
 
-										?>
-									</div>
-								</div>
+			<?php
+			if($n>0){
+				echo '<h2 class="pull-left">'.$db->data[0]["not_titulo"].'</h2>';
+			}
+			else{
+				echo '<h3 class="text-center">NOTICIAS DE '.$funcoes->MesPorNumero($m).'</h3>';
+			}
 
+			echo $conteudo;
+			if($conteudo=="" )//tem registros entao..
+			{
+				// linhas pesquisa
+				foreach ( $dados as $lista )
+				{// loop conteudo pesquisa
 
-							</div>
-						</div>
-						<hr>
-						<?php
-					}
-				}
-				?>
-				<div class="row">
-					<div class="paging-nav col-xs-12">
-						<span class="float-left">
+					$obj = ( object ) $lista;//converte o loop pra object e joga na ln
+					?>
+					<div class="row post_row">
+						<div class="col-sm-12 blog-post-teaser">
+							<div class="row">
 
-							<?php
-							if($conteudo=="" && $n==0 )//tem registros entao..
-							{
-								?>
-								<!-- PAGINACAO -->
-								<nav>
-									<ul class="pagination">
-										<li>
-											<a href="noticias&pag=1&mes=<?php echo $m?>" aria-label="Primeira" title="Primeira">
-												<span aria-hidden="true">&laquo;</span>
-											</a>
-										</li>
-										<?php
-										//3 links
-										for ($i = $pag-2; $i <= $pag+2; $i++){
-											if($i>0 && $i<=$pags)
-											{
-												echo '<li '.($i==$pag ? ' class="active"':'').'><a href="noticias&pag='.$i.'&mes='.$m.'" target="_self" >'.$i.'</a></li>';
-											}
-										}
-										?>
-										<li>
-											<a href="noticias&pag=<?php echo $pags; ?>&mes=<?php echo $m?>" aria-label="Última" title="Última">
-												<span aria-hidden="true">&raquo;</span>
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<?php
-							}
-							?>
-						</span>
-					</div>
-				</div>
-			</div>
+								<div class="container">
+									<img src="atqweb/noticias_fotos/fotos/<?php echo $obj->nfto_url !="" ? $obj->nfto_url	: "default.jpg"; ?>"  alt="" class="blog-post-teaser-image img-responsive">
 
-			<div class="col-sm-4 sidebar">
-				<div class="widget">
-					<h3>MALTA CERVEJARIA</h3>
-					<p>Há 55 anos a Cervejaria Malta está no mercado para oferecer excelência na fabricação de bebidas, buscando sempre aperfeiçoar a qualidade de seus produtos para satisfazer seus consumidores.</p>
-				</div>
-				<div class="widget widget-category">
-					<h3>Notícias</h3>
-					<ul class="list-unstyled">
-						<?php	for ($i=1; $i <= 12; $i++) {?>
-							<li class="category-list">
-								<a href="noticias&<?php echo "mes=".$i ?>">
 									<?php
-									$mes = 0;
-									foreach ($qtd_mes as $key => $value) {
-										if ($value["mes"] == $i) {
-											$mes = $value["qtd"];
+									if($n>0){
+										echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p>';
+										echo '<p>'.$obj->not_conteudo.'</p>';
+
+									}
+									else {
+										echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p><br><br>';
+										echo '<p><a href="noticias&n='.$obj->not_id.'"><h2>'.$obj->not_titulo.'</h2></a></p>';
+
+										echo '<p>'.$obj->not_descricao.'</p>';
+										echo '<p><a class="see-more pull-right" href="noticias&n='.$obj->not_id.'">Veja Mais</a></p>';
+									}
+
+
+
+									?>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					<hr>
+					<?php
+				}
+			}
+			?>
+			<div class="row">
+				<div class="paging-nav col-xs-12">
+					<span class="float-left">
+
+						<?php
+						if($conteudo=="" && $n==0 )//tem registros entao..
+						{
+							?>
+							<!-- PAGINACAO -->
+							<nav>
+								<ul class="pagination">
+									<li>
+										<a href="noticias&pag=1&mes=<?php echo $m?>" aria-label="Primeira" title="Primeira">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<?php
+									//3 links
+									for ($i = $pag-2; $i <= $pag+2; $i++){
+										if($i>0 && $i<=$pags)
+										{
+											echo '<li '.($i==$pag ? ' class="active"':'').'><a href="noticias&pag='.$i.'&mes='.$m.'" target="_self" >'.$i.'</a></li>';
 										}
 									}
-									echo $funcoes->MesPorNumero($i)."	(".$mes.")";
 									?>
-								</a>
-							</li>
-
+									<li>
+										<a href="noticias&pag=<?php echo $pags; ?>&mes=<?php echo $m?>" aria-label="Última" title="Última">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
 							<?php
-						}?>
-					</ul>
+						}
+						?>
+					</span>
 				</div>
 			</div>
-
 		</div>
+
+		<div class="col-sm-4 sidebar">
+			<div class="widget">
+				<h3>MALTA CERVEJARIA</h3>
+				<p>Há 55 anos a Cervejaria Malta está no mercado para oferecer excelência na fabricação de bebidas, buscando sempre aperfeiçoar a qualidade de seus produtos para satisfazer seus consumidores.</p>
+			</div>
+			<div class="widget widget-category">
+				<h3>Notícias</h3>
+				<ul class="list-unstyled">
+					<?php	for ($i=1; $i <= 12; $i++) {?>
+						<li class="category-list">
+							<a href="noticias&<?php echo "mes=".$i ?>">
+								<?php
+								$mes = 0;
+								foreach ($qtd_mes as $key => $value) {
+									if ($value["mes"] == $i) {
+										$mes = $value["qtd"];
+									}
+								}
+								echo $funcoes->MesPorNumero($i)."	(".$mes.")";
+								?>
+							</a>
+						</li>
+
+						<?php
+					}?>
+				</ul>
+			</div>
+		</div>
+
 	</div>
-</div>	<!-- Bottom Section -->
+</div>
