@@ -1,14 +1,25 @@
-<div class="mainbanner hidden-xs">
-	<div id="sequence">
-		<span class="sequence-prev"><i class="icon-left-open-big"></i></span>
-		<span class="sequence-next"><i class="icon-right-open-big"></i></span>
-		<ul class="sequence-canvas">
-			<li class="slide-frame">
-				<div class="slide-bg slide-bg1"></div>
-			</li>
-		</ul>
+<header class="menu">
+	<div  class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+			<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+			<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="_/images/main_slide/home_banner1.jpg" >
+			</div>
+			<div class="item">
+				<img src="_/images/main_slide/home_banner1.jpg" >
+			</div>
+			<div class="item">
+				<img src="_/images/main_slide/home_banner1.jpg" >
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 	</div>
-</div>
+</header>
 <!-- Main Banner -->
 <div class="grid-icon-container scroll-target">
 	<section class="container grid-icon">

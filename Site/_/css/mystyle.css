@@ -3,13 +3,23 @@
   font-size: 23px;
 }
 /* Set 100% Height */
-html,
-body {
+html, body {
   height: 100%;
+  margin: 0;
+
 }
-body {
-  font-weight: 300;
+
+header.menu{
+  padding-top: 0;
 }
+footer{
+  background:#750E07; color: #e42517; width:100%;
+  height:60px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -9357,7 +9367,7 @@ background-color: #000;
 
 #content{
   padding-bottom:60px;
-  margin-top: 63px;
+  padding-top: 63px;
 }
 header{
   padding-top: 10px;
@@ -9372,47 +9382,150 @@ h1{
   font-weight: bold;
   margin-bottom: 0px;
 }
-ul.produtos
+
+.ancorMarca
 {
-  list-style-type: none;
-}
-ul.produtos > li
-{
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-footer{
-  background:#ffd32c; color: #e42517; width:100%;
-  height:60px;
-  position:absolute;
-  bottom:0;
-  left:0;
+
+.thumbmarca, .thumbmarca:hover
+{
+  background: rgba(215, 215, 215, 0.17);;
+  height: 160px;
+  border-color: rgba(215, 215, 215, 0.17) !important;
+  padding: 20px;
 }
+
+.thumbmarca img{
+  height: 100%;
+}
+
+#marcas{
+  text-align: center;
+}
+
+/* ==============================
+Marcas Page
+============================== */
+
 
 @media (max-width: 600px){
   footer{font-size:0.73em}
 }
 .map{
-	width: auto;
+  width: auto;
 }
 .see-more {
-	/* color: #000000; */
-	text-transform: uppercase;
-	font-weight: 300;
-	padding: 5px 30px;
-	-webkit-box-shadow: 0 4px 0 #bdc3c7;
-	box-shadow: 0 4px 0 #bdc3c7;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	background-clip: padding-box;
-	background-color: #e3e9eb;
-	position: relative;
-	top: 0;
+  /* color: #000000; */
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 0 #bdc3c7;
+  box-shadow: 0 4px 0 #bdc3c7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #e3e9eb;
+  position: relative;
+  top: 0;
 }
 .see-more:hover{
-	background-color: #ffd32c;
-	text-decoration: none;
-	color: #ffffff;
-	-webkit-box-shadow: 0 4px 0 #e2bf3a;
-	box-shadow: 0 4px 0 #e2bf3a;
+  background-color: #ffd32c;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-box-shadow: 0 4px 0 #e2bf3a;
+  box-shadow: 0 4px 0 #e2bf3a;
+}
+
+/* ==============================
+Marcas Detail Page
+============================== */
+.rowTop{
+  margin-top: 0;
+  height: 610px;
+  background: #F9F8EA;
+}
+.divLeft{
+  padding-top :  20px;
+  max-width: 540px;
+}
+
+.rowBottom{
+  border-top: solid #efedde 3px;
+  padding-top: 5px;
+}
+
+.rowBottom div{
+  background: #efedde;
+
+}
+
+
+.divRight{
+  background: #FEC712;
+  position: absolute;
+  width: 960px;
+  height: 612px;
+  margin-left: 185px;
+}
+
+.detail-img1
+{
+  position: absolute;
+  height: 612px;
+  left: -130px;
+  top: 0px;
+}
+
+.detail-img2
+{
+  position: absolute;
+  height: 390px;
+  top : -86px;
+}
+
+.boxInfo{
+  max-width: 95%;
+}
+.infoItem{
+  color: #87856a;
+}
+.infoTitle{
+  font-weight: bold;
+}
+.containerTopo{
+  padding-top: 0px;
+}
+
+.separator{
+  position: absolute;
+  height: 280px;
+  bottom: 70px;
+  right: 50%;
+  text-align: center;
+}
+
+.acompanhamento
+{
+  margin-left: 5px;
+}
+
+.btnVoltar {
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 24px;
+  background: #f4c300;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+.btnVoltar:hover {
+  color : #fff;
+  background: #ffda54;
+  text-decoration: none;
 }
