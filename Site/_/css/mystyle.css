@@ -9408,8 +9408,6 @@ h1{
 /* ==============================
 Marcas Page
 ============================== */
-
-
 @media (max-width: 600px){
   footer{font-size:0.73em}
 }
@@ -9454,20 +9452,55 @@ Marcas Detail Page
 .rowBottom{
   border-top: solid #efedde 3px;
   padding-top: 5px;
+  height: 100%;
 }
 
 .rowBottom div{
   background: #efedde;
-
+  min-height: 320px;
 }
-
 
 .divRight{
   background: #FEC712;
   position: absolute;
-  width: 960px;
+  width: 35%;
   height: 612px;
-  margin-left: 185px;
+  left: 65%;
+}
+
+/*div right colors*/
+#pilsen-sem-alcool_pg .divRight{
+  background: #0086C2;
+}
+#malzbier_pg .divRight{
+  background: #50B970;
+}
+
+#malzbier-sem-alcool_pg .divRight{
+  background: #50B970;
+}
+
+#club-soda_pg .divRight{
+  background: #7dada5;
+}
+#nat-power_pg .divRight{
+  background: #e46019;
+}
+/*/----------------------------------*/
+@media (max-width: 1572px) {
+  .divRight
+  {
+    width: 30%;
+    left: 70%;
+  }
+}
+
+@media (max-width: 892px) {
+  .divRight
+  {
+    width: 15%;
+    left: 85%;
+  }
 }
 
 .detail-img1
@@ -9478,18 +9511,26 @@ Marcas Detail Page
   top: 0px;
 }
 
+#clubSodaImg1
+{
+  height: 621px;
+}
+
 .detail-img2
 {
   position: absolute;
   height: 390px;
-  top : -86px;
+  top : -60px;
+  z-index: 1;
 }
 
-.boxInfo{
-  max-width: 95%;
+.chopp2{
+  z-index: 0;
 }
+
 .infoItem{
   color: #87856a;
+  margin-left: 5px;
 }
 .infoTitle{
   font-weight: bold;
@@ -9501,14 +9542,59 @@ Marcas Detail Page
 .separator{
   position: absolute;
   height: 280px;
-  bottom: 70px;
   right: 50%;
-  text-align: center;
 }
 
 .acompanhamento
 {
-  margin-left: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1220px)
+{
+  h1{
+    font-size: 2.5em;
+  }
+  .acompanhamento  {
+    width: 137px;
+  }
+  .detail-img2
+  {
+    height: 330px;
+  }
+  .chopp2{
+    height: 350px;
+    z-index: 0;
+    top:-27px;
+  }
+}
+
+@media (max-width: 991px) {
+  h1{
+    font-size: 2em;
+  }
+  .acompanhamento{
+    width: 98px;
+  }
+
+  .detail-img2
+  {
+    height: 330px;
+  }
+  .chopp2{
+    height: 270px;
+    z-index: 0;
+    top:50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .acompanhamento{
+    width: 150px;
+  }
+
 }
 
 .btnVoltar {

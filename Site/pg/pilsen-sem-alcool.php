@@ -1,113 +1,63 @@
-<style>
-.bg{
-  padding-top: 80px;
-  padding-left:3%;
-  padding-right: 3%;
-  background:url(_/images/marcas-detalhado/pilsen-sem-alcool/bg.jpg) #688082 no-repeat;
-  width:100%;
-  background-size: cover;
-}
-
-.infomini{
-  font-size: 25px;
-  font-family: "Helvetica";
-  color: rgb(252, 248, 247);
-  line-height: 1.226;
-  text-align: center;
-  padding-top: 5%;
-  font-weight: bold;
-}
-.seta{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 80%;
-}
-
-#principal{
-  max-width: 90%;
-}
-
-.titulo {
-  font-size: 55px;
-  font-family: "Helvetica";
-  color: rgb(0, 81, 131);
-  font-weight: bold;
-  line-height: 0.979;
-  text-align: left;
-  text-shadow: 2px 2px 3px #000000;
-  padding: 10px 10px 10px 10px;
-
-}
-@media (max-width: 991px) {
-  .titulo {
-    font-size: 3em;
-    text-align: center;
-  }
-}
-
-
-
-
-</style>
-
-<div class="blog_classic bg">
-  <div class="container blog_classic_posts">
+<article class=" rowTop" id="pilsen-sem-alcool_pg">
+  <div class="container containerTopo">
     <div class="row">
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-12 col-lg-12">
-            <div class="titulo">
-              <em>
-                <p>
-                  CERVEJA PILSEN
-                </p>
-                <p>
-                  SEM ÁLCOOL
-                </p>
-              </em>
+      <div class="divRight hidden-xs" >
+      </div>
+      <div class="col-md-6 col-sm-6" >
+        <div class="divLeft">
+          <h1> CERVEJA PILSEN <br>SEM ÁLCOOL</h1>
+          <p class="infoItem animate-in slow-mo" data-anim-type="fade-in-left" data-anim-delay="0">
+            <span class="infoTitle">  Informação Nutricional:</span><br>
+            Definição/Tipo: Cerveja Tipo Pilsen<br>
+            Graduação Alcoólica: 0%
+          </p>
 
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen-sem-alcool/1.png" alt="" />
-            <div class="infomini">
-              <p>
-                Garrafa
-              </p>
-              <p>
-                600 ml
-              </p>
-            </div>
-          </div>
+          <p class="infoItem animate-in slow-mo" data-anim-type="fade-in-left" data-anim-delay="0">
+            <span class="infoTitle">  Ingredientest:</span><br>
+            Água, Malte, Carboidratos, Cereais<br>
+            não Malteados e Lúpulo
+          </p>
 
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen-sem-alcool/2.png" alt="" />
-            <div class="infomini">
-              <p>
-                Lata
-              </p>
-              <p>
-                473 ml
-              </p>
-            </div>
-          </div>
 
+          <p class="infoItem animate-in slow-mo" data-anim-type="fade-in-left" data-anim-delay="0">
+            <span class="infoTitle">  Embalagens:</span><br>
+            Garrafa retornável 600 ml <br>
+            Lata 473ml   
+
+          </p>
+          <a href="<?php echo $baseUrl?>/marcas" class="btnVoltar">Voltar</a>
         </div>
 
+      </div>
+      <div class="col-md-6 col-sm-6 hidden-xs " >
+        <img class="detail-img1 "  src="_/images/marcas_detail/pilsen-sem-alcool/1.png" alt=""  />
+      </div>
+    </div>
+  </div>
+</article>
 
-          <div class="row hidden-xs hidden-sm ">
-            <img class="img-responsive center-block seta" src="_/images/marcas-detalhado/pilsen-sem-alcool/seta.png" alt="" />
-          </div>
-          <div class="row">
-            <img class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen-sem-alcool/info.png" alt="" />
-          </div>
+<article class="rowBottom">
+  <div>
+    <div class="container">
+      <div class="row">
+        <img class="separator animate-in slow-mo" data-anim-type="fade-in" data-anim-delay="0" alt="" src="<?php echo $baseUrl?>_/images/marcas_detail/separator.png" />
+        <div class="col-md-6 col-sm-6 hidden-xs">
+          <img class="detail-img2 animate-in" data-anim-type="fade-in" data-anim-delay="470" src="<?php echo $baseUrl?>_/images/marcas_detail/pilsen-sem-alcool/2.png" alt="" />
         </div>
 
-        <div class="col-md-6 hidden-xs hidden-sm col-lg-6">
-          <img id="principal" class="img-responsive center-block" src="_/images/marcas-detalhado/pilsen-sem-alcool/principal.png" alt="" />
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <p class="infoItem animate-in slow-mo" data-anim-type="fade-in-left" data-anim-delay="0" >
+            <span class="infoTitle">  Combinações:</span><br>
+            Para ficar ainda melhor, combine com: aperitivos em geral, carnes vermelhase pratos orientais.
+            Malta Pilsen é perfeita para todas as estações do ano.
+          </p>
+          <p class="text-center">
+            <img class="acompanhamento animate-in" data-anim-type="bounce-in-up" data-anim-delay="590" src="<?php echo $baseUrl?>_/images/marcas_detail/a1.png" alt="" />
+            <img class="acompanhamento animate-in" data-anim-type="bounce-in-up" data-anim-delay="690" src="<?php echo $baseUrl?>_/images/marcas_detail/a2.png" alt="" />
+            <img class="acompanhamento animate-in" data-anim-type="bounce-in-up" data-anim-delay="790"src="<?php echo $baseUrl?>_/images/marcas_detail/a3.png" alt="" />
+          </p>
         </div>
       </div>
     </div>
-  </div>	<!-- Bottom Section -->
+  </div>
+</article>

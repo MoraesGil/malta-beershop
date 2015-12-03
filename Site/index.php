@@ -4,7 +4,7 @@ require_once 'atqweb/Classes/Funcoes.php';
 $db = new Mysql();
 $funcoes = new Funcoes();
 $baseUrl = "";
-// $baseUrl = "http://ataquepropaganda.com.br/malta/_"
+// $baseUrl = "http://ataquepropaganda.com.br/malta/"
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,14 +35,18 @@ if (isset($_GET['pg']))
   $pagina = $_GET['pg'];
 
   $paginas = array("home","marcas", "noticias", "empresa", "equipe","distribuicao","contato",
-  "club-soda-cristalina","pilsen","golden-beer");
+  "pilsen","pilsen-sem-alcool","golden-beer","malzbier","malzbier-sem-alcool",
+  "chopp",
+  "club-soda-cristalina","natpower-energy-drink"
 
-  if (in_array($pagina, $paginas)) {
-    // echo 'class="blog"';
-  }
-  else {
-    echo 'class="page-404"';
-  }
+);
+
+if (in_array($pagina, $paginas)) {
+  // echo 'class="blog"';
+}
+else {
+  echo 'class="page-404"';
+}
 }else {
   echo 'class="blog"';
 }

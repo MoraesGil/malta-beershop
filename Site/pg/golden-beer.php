@@ -1,7 +1,9 @@
 <article class=" rowTop" >
   <div class="container containerTopo">
     <div class="row">
-      <div class="col-md-6 animate-in" data-anim-type="bounce-in-right" data-anim-delay="300">
+      <div class="divRight hidden-xs" >
+      </div>
+      <div class="col-md-6 col-sm-6">
         <div class="divLeft">
           <h1> CERVEJA <br> GOLDEN BEER</h1>
           <p class="infoItem">
@@ -25,14 +27,9 @@
           </p>
           <a href="<?php echo $baseUrl?>/marcas" class="btnVoltar">Voltar</a>
         </div>
-
-      </div>
-      <div class="col-md-6 hidden-sm hidden-xs " >
-
-        <div class="divRight animate-in slow-mo" data-anim-type="bounce-in-left-large" data-anim-delay="370">
-
-        </div>
-        <img class="detail-img1 animate-in slow-mo"  src="_/images/marcas_detail/golden/1.png" alt=""  data-anim-type="bounce-in-left-large" data-anim-delay="100"/>
+       </div>
+      <div class="col-md-6 col-sm-6 hidden-xs " >
+        <img class="detail-img1 "  src="_/images/marcas_detail/golden/1.png" alt="" />
       </div>
     </div>
   </div>
