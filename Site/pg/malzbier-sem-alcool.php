@@ -24,12 +24,12 @@
             Lata 473ml <br>
             Lata 350ml
           </p>
-          <a href="<?php echo $baseUrl?>/marcas" class="btnVoltar">Voltar</a>
+          <a href="<?php echo $baseUrl?>marcas" class="btnVoltar">Voltar</a>
         </div>
 
       </div>
       <div class="col-md-6 col-sm-6 hidden-xs " >
-        <img class="detail-img1 "  src="_/images/marcas_detail/malzbier/1.png" alt=""  />
+        <img class="detail-img1 "  src="<?php echo $baseUrl ?>_/images/marcas_detail/malzbier-sem-alcool/1.png" alt=""  />
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
       <div class="row">
         <img class="separator animate-in slow-mo" data-anim-type="fade-in" data-anim-delay="0" alt="" src="<?php echo $baseUrl?>_/images/marcas_detail/separator.png" />
         <div class="col-md-6 col-sm-6 hidden-xs">
-          <img class="detail-img2 animate-in" data-anim-type="fade-in" data-anim-delay="470" src="<?php echo $baseUrl?>_/images/marcas_detail/malzbier/2.png" alt="" />
+          <img class="detail-img2 animate-in" data-anim-type="fade-in" data-anim-delay="470" src="<?php echo $baseUrl?>_/images/marcas_detail/malzbier-sem-alcool/2.png" alt="" />
         </div>
 
         <div class="col-md-6 col-sm-6 col-xs-12">

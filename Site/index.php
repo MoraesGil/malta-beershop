@@ -37,8 +37,10 @@ if (isset($_GET['pg']))
   $paginas = array("home","marcas", "noticias", "empresa", "equipe","distribuicao","contato",
   "pilsen","pilsen-sem-alcool","golden-beer","malzbier","malzbier-sem-alcool",
   "chopp",
-  "club-soda-cristalina","natpower-energy-drink"
-
+  "club-soda-cristalina","natpower-energy-drink",
+  "cristalina-tubaina","cristalina-guarana-zero","cristalina-guarana",
+  "cristalina-uva","cristalina-laranja","cristalina-limao",
+  "cristalina-citrus","tropicola","tropicola-zero"
 );
 
 if (in_array($pagina, $paginas)) {
@@ -52,7 +54,7 @@ else {
 }
 ?>
 >
-
+	<span id="baseurl" data-base='<?php echo $baseUrl?>'></span>
 <div style="min-height:100%; position:relative;">
 
 

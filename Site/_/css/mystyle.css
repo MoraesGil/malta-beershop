@@ -9467,8 +9467,8 @@ Marcas Detail Page
   height: 612px;
   left: 65%;
 }
-
-/*div right colors*/
+/*/-------------CORES  DIV RIGHT PAGE DETAIL---------------------*/
+/*-------- cervejas*/
 #pilsen-sem-alcool_pg .divRight{
   background: #0086C2;
 }
@@ -9479,13 +9479,44 @@ Marcas Detail Page
 #malzbier-sem-alcool_pg .divRight{
   background: #50B970;
 }
-
+/* ----- solos*/
 #club-soda_pg .divRight{
   background: #7dada5;
 }
 #nat-power_pg .divRight{
   background: #e46019;
 }
+/* ----- refrigerantes*/
+#cristalina-tubaina_pg .divRight{
+  background: #b49347;
+}
+#cristalina-guarana_pg .divRight{
+  background: #e31820;
+}
+#cristalina-guarana-zero_pg .divRight{
+  background: #42803c;
+}
+#cristalina-uva_pg .divRight{
+  background: #8c3895;
+}
+#cristalina-laranja_pg .divRight{
+  background: #ff5000;
+}
+#cristalina-limao-pg .divRight{
+  background: #11a761;
+}
+#cristalina-citrus-pg .divRight{
+  background: #85bb43;
+}
+#tropicola-pg .divRight{
+  background: #db404e;
+}
+#tropicola-zero-pg .divRight{
+  background: #3f3636;
+}
+
+
+
 /*/----------------------------------*/
 @media (max-width: 1572px) {
   .divRight
@@ -9515,6 +9546,13 @@ Marcas Detail Page
 {
   height: 621px;
 }
+
+#cristalina-tubaina1
+{
+  height: 619px;
+}
+
+
 
 .detail-img2
 {

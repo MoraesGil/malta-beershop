@@ -25,11 +25,11 @@
             5L, 10L, 20L, 30L e 50L.
 
           </p>
-          <a href="<?php echo $baseUrl?>/marcas" class="btnVoltar">Voltar</a>
+          <a href="<?php echo $baseUrl?>marcas" class="btnVoltar">Voltar</a>
         </div>
       </div>
       <div class="col-md-6 col-sm-6 hidden-xs " >
-        <img class="detail-img1 "  src="_/images/marcas_detail/chopp/1.png" alt="" />
+        <img class="detail-img1 "  src="<?php echo $baseUrl?>_/images/marcas_detail/chopp/1.png" alt="" />
       </div>
     </div>
   </div>

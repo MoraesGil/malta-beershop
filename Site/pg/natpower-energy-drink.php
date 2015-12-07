@@ -30,7 +30,7 @@
 
       </div>
       <div class="col-md-6 col-sm-6 hidden-xs " >
-        <img class="detail-img1 "  src="_/images/marcas_detail/natpower-energy-drink/1.png" alt=""  />
+        <img class="detail-img1 "  src="<?php echo $baseUrl ?>_/images/marcas_detail/natpower-energy-drink/1.png" alt=""  />
       </div>
     </div>
   </div>

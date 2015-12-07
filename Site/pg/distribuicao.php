@@ -8,7 +8,7 @@
 		A Malta Cervejaria oferece distribuição em nove estados
 	</p>
 	<div class="row">
- 
+
 		<div class="col-xs-12 col-sm-4 ">
 			<ul>
 				<li>ESPÍRITO SANTO</li>
@@ -23,7 +23,7 @@
 			</ul>
 		</div>
 		<div class="col-xs-12		col-sm-8">
-			<img class="img-responsive map" src="_/images/distribuicao-map.png" alt="" />
+			<img class="img-responsive map" src="<?php echo $baseUrl ?>_/images/distribuicao-map.png" alt="" />
 		</div>
 
 	</div>

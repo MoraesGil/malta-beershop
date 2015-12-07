@@ -22,15 +22,15 @@
           <p class="infoItem animate-in slow-mo" data-anim-type="fade-in-left" data-anim-delay="0">
             <span class="infoTitle">  Embalagens:</span><br>
             Garrafa retornável 600 ml <br>
-            Lata 473ml   
+            Lata 473ml
 
           </p>
-          <a href="<?php echo $baseUrl?>/marcas" class="btnVoltar">Voltar</a>
+          <a href="<?php echo $baseUrl?>marcas" class="btnVoltar">Voltar</a>
         </div>
 
       </div>
       <div class="col-md-6 col-sm-6 hidden-xs " >
-        <img class="detail-img1 "  src="_/images/marcas_detail/pilsen-sem-alcool/1.png" alt=""  />
+        <img class="detail-img1 "  src="<?php echo $baseUrl ?>_/images/marcas_detail/pilsen-sem-alcool/1.png" alt=""  />
       </div>
     </div>
   </div>

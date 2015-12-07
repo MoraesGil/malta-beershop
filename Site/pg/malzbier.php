@@ -26,12 +26,12 @@
             Lata 350ml
 
           </p>
-          <a href="<?php echo $baseUrl?>/marcas" class="btnVoltar">Voltar</a>
+          <a href="<?php echo $baseUrl?>marcas" class="btnVoltar">Voltar</a>
         </div>
 
       </div>
       <div class="col-md-6 col-sm-6 hidden-xs " >
-        <img class="detail-img1 "  src="_/images/marcas_detail/malzbier/1.png" alt=""  />
+        <img class="detail-img1 "  src="<?php echo $baseUrl ?>_/images/marcas_detail/malzbier/1.png" alt=""  />
       </div>
     </div>
   </div>

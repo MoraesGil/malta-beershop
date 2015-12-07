@@ -6,6 +6,7 @@ $( ".ancorMarca" ).click(function() {
 });
 
 function gerar(qtd, tipo){
+  var baseurl = $('#baseurl').data("base");
   var links  = {
     cervejas :
     [
@@ -34,27 +35,27 @@ function gerar(qtd, tipo){
     [
       {
         id : 1,
-        pg : 'tubaina-cristalina'
+        pg : 'cristalina-tubaina'
       },
       {
         id : 2,
-        pg : 'cristalina-zero'
+        pg : 'cristalina-guarana'
       },
       {
         id : 3,
-        pg : 'cristalina-uva'
+        pg : 'cristalina-guarana-zero'
       },
       {
         id : 4,
-        pg : 'cristalina-laranja'
+        pg : 'cristalina-uva'
       },
       {
         id : 5,
-        pg : 'cristalina-limao'
+        pg : 'cristalina-laranja'
       },
       {
         id : 6,
-        pg : 'cristalina-guarana'
+        pg : 'cristalina-limao'
       },
       {
         id : 7,
@@ -97,8 +98,8 @@ function gerar(qtd, tipo){
       } break;
     }
     retorno+="<div class='col-md-4 col-sm-4 marca-brasao hover-pulse animate-in' data-anim-type='zoom-in-left'>";
-    retorno+="<a href='/"+link+"' class='thumbnail thumbmarca'>";
-    retorno+="<img src='_/images/marcas/"+tipo+"/"+i+".png'>";
+    retorno+="<a href='"+baseurl+link+"' class='thumbnail thumbmarca'>";
+    retorno+="<img src='"+baseurl+ "_/images/marcas/"+tipo+"/"+i+".png'>";
     retorno+="</a></div>";
   }
 
