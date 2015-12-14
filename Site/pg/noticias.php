@@ -115,7 +115,12 @@ a:hover, a:focus {
 				echo '<h2 class="pull-left">'.$db->data[0]["not_titulo"].'</h2>';
 			}
 			else{
-				echo '<h3 class="text-center">NOTICIAS DE '.$funcoes->MesPorNumero($m).'</h3>';
+				if ($m==null) {
+					echo '<h3 class="text-center">noticias</h3>';
+				}
+				else {
+					echo '<h3 class="text-center">NOTICIAS DE '.$funcoes->MesPorNumero($m).'</h3>';
+				}
 			}
 
 			echo $conteudo;
@@ -141,15 +146,12 @@ a:hover, a:focus {
 
 									}
 									else {
-										echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p><br><br>';
+										echo '<p class="pull-right">'.$obj->not_dia."/".$funcoes->MesAbreviado($obj->not_mes)."/".$obj->not_ano.'</p>';
 										echo '<p><a href="noticias&n='.$obj->not_id.'"><h2>'.$obj->not_titulo.'</h2></a></p>';
 
 										echo '<p>'.$obj->not_descricao.'</p>';
 										echo '<p><a class="see-more pull-right" href="noticias&n='.$obj->not_id.'">Veja Mais</a></p>';
 									}
-
-
-
 									?>
 								</div>
 							</div>
